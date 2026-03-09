@@ -44,7 +44,7 @@ DEF HIRO Robot {
           }
           geometry DEF torso_kidsize25_visual Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/torso_kidsize25_visual.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/torso_kidsize25_visual.stl"
             ]
           }
         }
@@ -102,7 +102,7 @@ DEF HIRO Robot {
                 }
                 geometry DEF neck_visual Mesh {
                   url [
-                    "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/neck_visual.stl"
+                    "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/neck_visual.stl"
                   ]
                 }
               }
@@ -141,7 +141,7 @@ DEF HIRO Robot {
                       }
                       geometry DEF head_visual Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/head_visual.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/head_visual.stl"
                         ]
                       }
                     }
@@ -168,7 +168,7 @@ DEF HIRO Robot {
                     children [
                       DEF petg_2mm_headbracket_old Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/petg_2mm_headbracket_old.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/petg_2mm_headbracket_old.stl"
                         ]
                       }
                     ]
@@ -179,7 +179,7 @@ DEF HIRO Robot {
                     children [
                       DEF camera_logitech_c920_offset_2mm Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/camera_logitech_c920_offset_2mm.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/camera_logitech_c920_offset_2mm.stl"
                         ]
                       }
                     ]
@@ -190,7 +190,7 @@ DEF HIRO Robot {
                     children [
                       DEF camera_frame Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/camera_frame.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/camera_frame.stl"
                         ]
                       }
                     ]
@@ -201,7 +201,7 @@ DEF HIRO Robot {
                     children [
                       DEF mx_28 Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_28.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_28.stl"
                         ]
                       }
                     ]
@@ -212,7 +212,7 @@ DEF HIRO Robot {
                     children [
                       DEF petg_2mm_rotatingheadbracket Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/petg_2mm_rotatingheadbracket.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/petg_2mm_rotatingheadbracket.stl"
                         ]
                       }
                     ]
@@ -280,7 +280,7 @@ DEF HIRO Robot {
                 }
                 geometry DEF almi2_view_6_7__arm_bracket_visual Mesh {
                   url [
-                    "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi2_view_6_7__arm_bracket_visual.stl"
+                    "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi2_view_6_7__arm_bracket_visual.stl"
                   ]
                 }
               }
@@ -319,7 +319,7 @@ DEF HIRO Robot {
                       }
                       geometry DEF right_upperhand_visual Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/right_upperhand_visual.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/right_upperhand_visual.stl"
                         ]
                       }
                     }
@@ -358,7 +358,7 @@ DEF HIRO Robot {
                             }
                             geometry DEF right_lowerhand_visual Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/right_lowerhand_visual.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/right_lowerhand_visual.stl"
                               ]
                             }
                           }
@@ -379,7 +379,7 @@ DEF HIRO Robot {
                           children [
                             DEF almi_4_5mm_connector_lower_arm_kidsize Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_4_5mm_connector_lower_arm_kidsize.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_4_5mm_connector_lower_arm_kidsize.stl"
                               ]
                             }
                           ]
@@ -390,7 +390,7 @@ DEF HIRO Robot {
                           children [
                             DEF tpu_arm_kidsize_telapak Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/tpu_arm_kidsize_telapak.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/tpu_arm_kidsize_telapak.stl"
                               ]
                             }
                           ]
@@ -433,7 +433,7 @@ DEF HIRO Robot {
                     children [
                       DEF almi2_view_13__14__arm Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi2_view_13__14__arm.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi2_view_13__14__arm.stl"
                         ]
                       }
                     ]
@@ -501,7 +501,7 @@ DEF HIRO Robot {
                 }
                 geometry DEF almi2_view_6_7__arm_bracket_2_visual Mesh {
                   url [
-                    "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi2_view_6_7__arm_bracket_2_visual.stl"
+                    "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi2_view_6_7__arm_bracket_2_visual.stl"
                   ]
                 }
               }
@@ -540,7 +540,7 @@ DEF HIRO Robot {
                       }
                       geometry DEF left_upperhand_visual Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/left_upperhand_visual.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/left_upperhand_visual.stl"
                         ]
                       }
                     }
@@ -579,7 +579,7 @@ DEF HIRO Robot {
                             }
                             geometry DEF left_lowerhand_visual Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/left_lowerhand_visual.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/left_lowerhand_visual.stl"
                               ]
                             }
                           }
@@ -709,7 +709,7 @@ DEF HIRO Robot {
                 }
                 geometry DEF stainless_steel_2mm_upper_leg_bracket_visual Mesh {
                   url [
-                    "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/stainless_steel_2mm_upper_leg_bracket_visual.stl"
+                    "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/stainless_steel_2mm_upper_leg_bracket_visual.stl"
                   ]
                 }
               }
@@ -748,7 +748,7 @@ DEF HIRO Robot {
                       }
                       geometry DEF foot_right_1_visual Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_right_1_visual.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_right_1_visual.stl"
                         ]
                       }
                     }
@@ -787,7 +787,7 @@ DEF HIRO Robot {
                             }
                             geometry DEF foot_right_2_visual Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_right_2_visual.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_right_2_visual.stl"
                               ]
                             }
                           }
@@ -825,7 +825,7 @@ DEF HIRO Robot {
                                   }
                                   geometry DEF foot_right_3_visual Mesh {
                                     url [
-                                      "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_right_3_visual.stl"
+                                      "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_right_3_visual.stl"
                                     ]
                                   }
                                 }
@@ -863,7 +863,7 @@ DEF HIRO Robot {
                                         }
                                         geometry DEF foot_right_4_visual Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_right_4_visual.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_right_4_visual.stl"
                                           ]
                                         }
                                       }
@@ -902,7 +902,7 @@ DEF HIRO Robot {
                                               }
                                               geometry DEF foot_right_5_visual Mesh {
                                                 url [
-                                                  "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_right_5_visual.stl"
+                                                  "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_right_5_visual.stl"
                                                 ]
                                               }
                                             }
@@ -923,7 +923,7 @@ DEF HIRO Robot {
                                             children [
                                               DEF pla_50__shoes Mesh {
                                                 url [
-                                                  "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/pla_50__shoes.stl"
+                                                  "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/pla_50__shoes.stl"
                                                 ]
                                               }
                                             ]
@@ -934,7 +934,7 @@ DEF HIRO Robot {
                                             children [
                                               DEF almi_2mm_lower_leg Mesh {
                                                 url [
-                                                  "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_lower_leg.stl"
+                                                  "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_lower_leg.stl"
                                                 ]
                                               }
                                             ]
@@ -964,7 +964,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF mx_64t_3 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_3.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_3.stl"
                                           ]
                                         }
                                       ]
@@ -975,7 +975,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF fr05_f101k_set_1 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/fr05_f101k_set_1.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/fr05_f101k_set_1.stl"
                                           ]
                                         }
                                       ]
@@ -986,7 +986,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF almi_2mm_connector_mx64_1 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_connector_mx64_1.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_connector_mx64_1.stl"
                                           ]
                                         }
                                       ]
@@ -1011,7 +1011,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF almi_2mm_fr05_f101k_set_1 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_fr05_f101k_set_1.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_fr05_f101k_set_1.stl"
                                           ]
                                         }
                                       ]
@@ -1022,7 +1022,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF hn05_i101_2 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101_2.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101_2.stl"
                                           ]
                                         }
                                       ]
@@ -1033,7 +1033,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF mf128zz_2 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz_2.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz_2.stl"
                                           ]
                                         }
                                       ]
@@ -1043,7 +1043,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF rx64_cap_2 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap_2.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap_2.stl"
                                           ]
                                         }
                                       ]
@@ -1092,7 +1092,7 @@ DEF HIRO Robot {
                             children [
                               DEF stainless_steel_2mm_leg_spacer Mesh {
                                 url [
-                                  "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/stainless_steel_2mm_leg_spacer.stl"
+                                  "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/stainless_steel_2mm_leg_spacer.stl"
                                 ]
                               }
                             ]
@@ -1120,7 +1120,7 @@ DEF HIRO Robot {
                           children [
                             DEF almi_6_5mm_l_mx64 Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_6_5mm_l_mx64.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_6_5mm_l_mx64.stl"
                               ]
                             }
                           ]
@@ -1138,7 +1138,7 @@ DEF HIRO Robot {
                           children [
                             DEF mx_64t_1 Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_1.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_1.stl"
                               ]
                             }
                           ]
@@ -1149,7 +1149,7 @@ DEF HIRO Robot {
                           children [
                             DEF hn05_i101 Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101.stl"
                               ]
                             }
                           ]
@@ -1160,7 +1160,7 @@ DEF HIRO Robot {
                           children [
                             DEF mf128zz Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz.stl"
                               ]
                             }
                           ]
@@ -1171,7 +1171,7 @@ DEF HIRO Robot {
                           children [
                             DEF rx64_cap Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap.stl"
                               ]
                             }
                           ]
@@ -1200,7 +1200,7 @@ DEF HIRO Robot {
                     children [
                       DEF mx_64t_2 Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_2.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_2.stl"
                         ]
                       }
                     ]
@@ -1211,7 +1211,7 @@ DEF HIRO Robot {
                     children [
                       DEF almi_2mm_fr05_f101k_set Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_fr05_f101k_set.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_fr05_f101k_set.stl"
                         ]
                       }
                     ]
@@ -1222,7 +1222,7 @@ DEF HIRO Robot {
                     children [
                       DEF almi_2mm_connector_mx64 Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_connector_mx64.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_connector_mx64.stl"
                         ]
                       }
                     ]
@@ -1240,7 +1240,7 @@ DEF HIRO Robot {
                     children [
                       DEF fr05_f101k_set Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/fr05_f101k_set.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/fr05_f101k_set.stl"
                         ]
                       }
                     ]
@@ -1258,7 +1258,7 @@ DEF HIRO Robot {
                     children [
                       DEF mf128zz_1 Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz_1.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz_1.stl"
                         ]
                       }
                     ]
@@ -1269,7 +1269,7 @@ DEF HIRO Robot {
                     children [
                       DEF rx64_cap_1 Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap_1.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap_1.stl"
                         ]
                       }
                     ]
@@ -1280,7 +1280,7 @@ DEF HIRO Robot {
                     children [
                       DEF hn05_i101_1 Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101_1.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101_1.stl"
                         ]
                       }
                     ]
@@ -1367,7 +1367,7 @@ DEF HIRO Robot {
                 }
                 geometry DEF stainless_steel_2mm_upper_leg_bracket_mir_visual Mesh {
                   url [
-                    "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/stainless_steel_2mm_upper_leg_bracket_mir_visual.stl"
+                    "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/stainless_steel_2mm_upper_leg_bracket_mir_visual.stl"
                   ]
                 }
               }
@@ -1406,7 +1406,7 @@ DEF HIRO Robot {
                       }
                       geometry DEF foot_left_1_visual Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_left_1_visual.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_left_1_visual.stl"
                         ]
                       }
                     }
@@ -1445,7 +1445,7 @@ DEF HIRO Robot {
                             }
                             geometry DEF foot_left_2_visual Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_left_2_visual.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_left_2_visual.stl"
                               ]
                             }
                           }
@@ -1483,7 +1483,7 @@ DEF HIRO Robot {
                                   }
                                   geometry DEF foot_left_3_visual Mesh {
                                     url [
-                                      "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_left_3_visual.stl"
+                                      "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_left_3_visual.stl"
                                     ]
                                   }
                                 }
@@ -1521,7 +1521,7 @@ DEF HIRO Robot {
                                         }
                                         geometry DEF foot_left_4_visual Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_left_4_visual.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_left_4_visual.stl"
                                           ]
                                         }
                                       }
@@ -1560,7 +1560,7 @@ DEF HIRO Robot {
                                               }
                                               geometry DEF foot_left_5_visual Mesh {
                                                 url [
-                                                  "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_left_5_visual.stl"
+                                                  "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/foot_left_5_visual.stl"
                                                 ]
                                               }
                                             }
@@ -1581,7 +1581,7 @@ DEF HIRO Robot {
                                             children [
                                               DEF almi_2mm_lower_leg_mir Mesh {
                                                 url [
-                                                  "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_lower_leg_mir.stl"
+                                                  "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_lower_leg_mir.stl"
                                                 ]
                                               }
                                             ]
@@ -1592,7 +1592,7 @@ DEF HIRO Robot {
                                             children [
                                               DEF pla_50__shoes_mir Mesh {
                                                 url [
-                                                  "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/pla_50__shoes_mir.stl"
+                                                  "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/pla_50__shoes_mir.stl"
                                                 ]
                                               }
                                             ]
@@ -1622,7 +1622,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF mx_64t_mir_2 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_mir_2.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_mir_2.stl"
                                           ]
                                         }
                                       ]
@@ -1633,7 +1633,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF almi_2mm_connector_mx64_mir_1 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_connector_mx64_mir_1.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_connector_mx64_mir_1.stl"
                                           ]
                                         }
                                       ]
@@ -1644,7 +1644,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF fr05_f101k_set_mir_1 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/fr05_f101k_set_mir_1.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/fr05_f101k_set_mir_1.stl"
                                           ]
                                         }
                                       ]
@@ -1661,7 +1661,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF almi_2mm_fr05_f101k_set_mir_1 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_fr05_f101k_set_mir_1.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_fr05_f101k_set_mir_1.stl"
                                           ]
                                         }
                                       ]
@@ -1679,7 +1679,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF hn05_i101_mir_2 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101_mir_2.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101_mir_2.stl"
                                           ]
                                         }
                                       ]
@@ -1690,7 +1690,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF mf128zz_mir_2 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz_mir_2.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz_mir_2.stl"
                                           ]
                                         }
                                       ]
@@ -1701,7 +1701,7 @@ DEF HIRO Robot {
                                       children [
                                         DEF rx64_cap_mir_2 Mesh {
                                           url [
-                                            "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap_mir_2.stl"
+                                            "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap_mir_2.stl"
                                           ]
                                         }
                                       ]
@@ -1750,7 +1750,7 @@ DEF HIRO Robot {
                             children [
                               DEF stainless_steel_2mm_leg_spacer_mir Mesh {
                                 url [
-                                  "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/stainless_steel_2mm_leg_spacer_mir.stl"
+                                  "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/stainless_steel_2mm_leg_spacer_mir.stl"
                                 ]
                               }
                             ]
@@ -1777,7 +1777,7 @@ DEF HIRO Robot {
                           children [
                             DEF mx_64t_mir Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_mir.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_mir.stl"
                               ]
                             }
                           ]
@@ -1788,7 +1788,7 @@ DEF HIRO Robot {
                           children [
                             DEF almi_6_5mm_l_mx64_mir Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_6_5mm_l_mx64_mir.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_6_5mm_l_mx64_mir.stl"
                               ]
                             }
                           ]
@@ -1806,7 +1806,7 @@ DEF HIRO Robot {
                           children [
                             DEF hn05_i101_mir Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101_mir.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101_mir.stl"
                               ]
                             }
                           ]
@@ -1817,7 +1817,7 @@ DEF HIRO Robot {
                           children [
                             DEF rx64_cap_mir Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap_mir.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap_mir.stl"
                               ]
                             }
                           ]
@@ -1828,7 +1828,7 @@ DEF HIRO Robot {
                           children [
                             DEF mf128zz_mir Mesh {
                               url [
-                                "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz_mir.stl"
+                                "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz_mir.stl"
                               ]
                             }
                           ]
@@ -1858,7 +1858,7 @@ DEF HIRO Robot {
                     children [
                       DEF mx_64t_mir_1 Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_mir_1.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_mir_1.stl"
                         ]
                       }
                     ]
@@ -1869,7 +1869,7 @@ DEF HIRO Robot {
                     children [
                       DEF almi_2mm_fr05_f101k_set_mir Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_fr05_f101k_set_mir.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_fr05_f101k_set_mir.stl"
                         ]
                       }
                     ]
@@ -1880,7 +1880,7 @@ DEF HIRO Robot {
                     children [
                       DEF almi_2mm_connector_mx64_mir Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_connector_mx64_mir.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_connector_mx64_mir.stl"
                         ]
                       }
                     ]
@@ -1891,7 +1891,7 @@ DEF HIRO Robot {
                     children [
                       DEF fr05_f101k_set_mir Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/fr05_f101k_set_mir.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/fr05_f101k_set_mir.stl"
                         ]
                       }
                     ]
@@ -1916,7 +1916,7 @@ DEF HIRO Robot {
                     children [
                       DEF mf128zz_mir_1 Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz_mir_1.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mf128zz_mir_1.stl"
                         ]
                       }
                     ]
@@ -1927,7 +1927,7 @@ DEF HIRO Robot {
                     children [
                       DEF hn05_i101_mir_1 Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101_mir_1.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/hn05_i101_mir_1.stl"
                         ]
                       }
                     ]
@@ -1938,7 +1938,7 @@ DEF HIRO Robot {
                     children [
                       DEF rx64_cap_mir_1 Mesh {
                         url [
-                          "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap_mir_1.stl"
+                          "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/rx64_cap_mir_1.stl"
                         ]
                       }
                     ]
@@ -2004,7 +2004,7 @@ DEF HIRO Robot {
         children [
           DEF mx_64t_mir1 Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_mir1.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t_mir1.stl"
             ]
           }
         ]
@@ -2015,7 +2015,7 @@ DEF HIRO Robot {
         children [
           DEF mx_64t Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/mx_64t.stl"
             ]
           }
         ]
@@ -2047,7 +2047,7 @@ DEF HIRO Robot {
         children [
           DEF upper_floor Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/upper_floor.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/upper_floor.stl"
             ]
           }
         ]
@@ -2058,7 +2058,7 @@ DEF HIRO Robot {
         children [
           DEF second_floor Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/second_floor.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/second_floor.stl"
             ]
           }
         ]
@@ -2069,7 +2069,7 @@ DEF HIRO Robot {
         children [
           DEF front_pillar Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/front_pillar.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/front_pillar.stl"
             ]
           }
         ]
@@ -2101,7 +2101,7 @@ DEF HIRO Robot {
         children [
           DEF pcnel_exch Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/pcnel_exch.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/pcnel_exch.stl"
             ]
           }
         ]
@@ -2112,7 +2112,7 @@ DEF HIRO Robot {
         children [
           DEF spacer_bracket_id_1_19_2_mir Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/spacer_bracket_id_1_19_2_mir.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/spacer_bracket_id_1_19_2_mir.stl"
             ]
           }
         ]
@@ -2123,7 +2123,7 @@ DEF HIRO Robot {
         children [
           DEF handle_bracket_kidsize Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/handle_bracket_kidsize.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/handle_bracket_kidsize.stl"
             ]
           }
         ]
@@ -2134,7 +2134,7 @@ DEF HIRO Robot {
         children [
           DEF almi_5mm_bracket_servo_1_2_left Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_5mm_bracket_servo_1_2_left.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_5mm_bracket_servo_1_2_left.stl"
             ]
           }
         ]
@@ -2145,7 +2145,7 @@ DEF HIRO Robot {
         children [
           DEF handle Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/handle.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/handle.stl"
             ]
           }
         ]
@@ -2156,7 +2156,7 @@ DEF HIRO Robot {
         children [
           DEF holder_bumper_upper Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/holder_bumper_upper.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/holder_bumper_upper.stl"
             ]
           }
         ]
@@ -2167,7 +2167,7 @@ DEF HIRO Robot {
         children [
           DEF handler_holder_siber Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/handler_holder_siber.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/handler_holder_siber.stl"
             ]
           }
         ]
@@ -2178,7 +2178,7 @@ DEF HIRO Robot {
         children [
           DEF bracket_1_2_lower_left Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bracket_1_2_lower_left.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bracket_1_2_lower_left.stl"
             ]
           }
         ]
@@ -2189,7 +2189,7 @@ DEF HIRO Robot {
         children [
           DEF front_upper_bumper Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/front_upper_bumper.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/front_upper_bumper.stl"
             ]
           }
         ]
@@ -2200,7 +2200,7 @@ DEF HIRO Robot {
         children [
           DEF petg_5_19_mx28_seating Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/petg_5_19_mx28_seating.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/petg_5_19_mx28_seating.stl"
             ]
           }
         ]
@@ -2211,7 +2211,7 @@ DEF HIRO Robot {
         children [
           DEF almi_5mm_bracket_servo_1_2 Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_5mm_bracket_servo_1_2.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_5mm_bracket_servo_1_2.stl"
             ]
           }
         ]
@@ -2222,7 +2222,7 @@ DEF HIRO Robot {
         children [
           DEF spacer_bracket_id_1_19_2 Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/spacer_bracket_id_1_19_2.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/spacer_bracket_id_1_19_2.stl"
             ]
           }
         ]
@@ -2240,7 +2240,7 @@ DEF HIRO Robot {
         children [
           DEF front_upper_bumper_mir Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/front_upper_bumper_mir.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/front_upper_bumper_mir.stl"
             ]
           }
         ]
@@ -2258,7 +2258,7 @@ DEF HIRO Robot {
         children [
           DEF bracket_1_2_lower Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bracket_1_2_lower.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bracket_1_2_lower.stl"
             ]
           }
         ]
@@ -2269,7 +2269,7 @@ DEF HIRO Robot {
         children [
           DEF bumper_front_lower_mir Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bumper_front_lower_mir.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bumper_front_lower_mir.stl"
             ]
           }
         ]
@@ -2280,7 +2280,7 @@ DEF HIRO Robot {
         children [
           DEF spacer_106_64_mir2 Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/spacer_106_64_mir2.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/spacer_106_64_mir2.stl"
             ]
           }
         ]
@@ -2291,7 +2291,7 @@ DEF HIRO Robot {
         children [
           DEF holder_lower_bracket_mir Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/holder_lower_bracket_mir.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/holder_lower_bracket_mir.stl"
             ]
           }
         ]
@@ -2302,7 +2302,7 @@ DEF HIRO Robot {
         children [
           DEF almi_2mm_floor_2nd__1 Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_floor_2nd__1.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/almi_2mm_floor_2nd__1.stl"
             ]
           }
         ]
@@ -2313,7 +2313,7 @@ DEF HIRO Robot {
         children [
           DEF spacer_106_64_mir2_mir Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/spacer_106_64_mir2_mir.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/spacer_106_64_mir2_mir.stl"
             ]
           }
         ]
@@ -2324,7 +2324,7 @@ DEF HIRO Robot {
         children [
           DEF back_bumper Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/back_bumper.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/back_bumper.stl"
             ]
           }
         ]
@@ -2335,7 +2335,7 @@ DEF HIRO Robot {
         children [
           DEF xt_bracket Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/xt_bracket.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/xt_bracket.stl"
             ]
           }
         ]
@@ -2346,7 +2346,7 @@ DEF HIRO Robot {
         children [
           DEF battery_holder Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/battery_holder.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/battery_holder.stl"
             ]
           }
         ]
@@ -2364,7 +2364,7 @@ DEF HIRO Robot {
         children [
           DEF bracket_back_bumper Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bracket_back_bumper.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bracket_back_bumper.stl"
             ]
           }
         ]
@@ -2375,7 +2375,7 @@ DEF HIRO Robot {
         children [
           DEF holder_lower_bracket Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/holder_lower_bracket.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/holder_lower_bracket.stl"
             ]
           }
         ]
@@ -2393,7 +2393,7 @@ DEF HIRO Robot {
         children [
           DEF bumper_front_lower Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bumper_front_lower.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bumper_front_lower.stl"
             ]
           }
         ]
@@ -2404,7 +2404,7 @@ DEF HIRO Robot {
         children [
           DEF bracket_back_bumper_mir Mesh {
             url [
-              "/home/musyaree/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bracket_back_bumper_mir.stl"
+              "~/ichiro-ws/install/gijitaiken_webots/share/gijitaiken_webots/worlds/../protos/hiro_textures/bracket_back_bumper_mir.stl"
             ]
           }
         ]
