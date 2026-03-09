@@ -11,7 +11,7 @@ from gijitaiken_webots.node.process.middleware import Middleware
 
 class LogicNode(Node):
     def __init__(self):
-        super().__init__('tachimawari_node') # Nama node tetap disamakan
+        super().__init__('tachimawari_node')
         
         self.middleware = Middleware()
         self.imu_yaw = 0.0

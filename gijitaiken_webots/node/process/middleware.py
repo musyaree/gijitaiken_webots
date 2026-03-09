@@ -5,7 +5,7 @@ class Middleware:
     Logika Middleware Tachimawari (Sederhana).
     Mengatur 'Siapa boleh menggerakkan Apa' berdasarkan Control Type.
     """
-    # Enum Control Type (Sesuai msg int8)
+    # Enum Control Type
     DEFAULT = 0
     FOR_WALKING = 1
     FOR_HEAD = 2
@@ -13,7 +13,6 @@ class Middleware:
     FORCE = 4
 
     def __init__(self):
-        # Definisi ID (Sesuai joint_id.hpp)
         self.HEAD_IDS = [19, 20]
         self.BODY_IDS = [
             1, 2, 3, 4, 5, 6,             # Arms
@@ -66,7 +65,6 @@ class Middleware:
         if control_type in self.last_access:
             self.last_access[control_type] = current_time
 
-        # Logic Prioritas:
         # Jika ACTION baru saja aktif (< 0.5 detik lalu), WALKING ditahan dulu.
         if control_type == self.FOR_WALKING:
             if (current_time - self.last_access[self.FOR_ACTION]) < self.TIME_LIMIT:

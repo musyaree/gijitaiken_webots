@@ -104,10 +104,7 @@ class DeviceManager:
             status.append("ACCEL")
         print(f"[SENSOR] Active: {', '.join(status)}")
 
-    def _init_camera(self, target_fps=30.0):
-        """Logic ini disalin PERSIS dari kode lama Anda"""
-        
-        # Cari device (Kode lama pakai "camera", kita buat robust sedikit)
+    def _init_camera(self, target_fps=30.0):        
         self.camera = self.robot.getDevice("camera_sensor")
             
         if self.camera:
