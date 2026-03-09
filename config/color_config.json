@@ -1,0 +1,26 @@
+{
+  "ball": {
+    "min_hsv": [0, 100, 100],
+    "max_hsv": [25, 255, 255],
+    "min_lab": [0, 127, 127],
+    "max_lab": [255, 127, 127],
+    "invert_hue": false,
+    "use_lab": false
+  },
+  "field": {
+    "min_hsv": [35, 50, 50],
+    "max_hsv": [85, 255, 255],
+    "min_lab": [0, 0, 0],
+    "max_lab": [255, 255, 255],
+    "invert_hue": false,
+    "use_lab": false
+  },
+  "goal": {
+    "min_hsv": [0, 0, 200],
+    "max_hsv": [179, 50, 255],
+    "min_lab": [0, 0, 0],
+    "max_lab": [255, 255, 255],
+    "invert_hue": false,
+    "use_lab": false
+  }
+}

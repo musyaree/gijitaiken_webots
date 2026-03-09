@@ -1,0 +1,1656 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/821537de265f690cd6a7463f/w/e6dd5c2cd3f02f2c138b8ab4/e/dddb74688ea578ce99794d9b -->
+<robot name="hiro_urdf">
+  <!-- Link torso_kidsize25 -->
+  <link name="torso_kidsize25">
+    <inertial>
+      <origin xyz="0.0857013 -0.0796011 0.0976927" rpy="0 0 0"/>
+      <mass value="2.16719"/>
+      <inertia ixx="0.00982507" ixy="9.38024e-07" ixz="-0.000706149" iyy="0.00929033" iyz="8.09787e-07" izz="0.00934245"/>
+    </inertial>
+    <!-- Part mx_64t_mir1 -->
+    <collision>
+      <origin xyz="0.08052 -0.0300956 0.0445065" rpy="8.45209e-14 -1.18338e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_mir1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_64t -->
+    <collision>
+      <origin xyz="0.0805216 -0.129096 0.0445065" rpy="3.14159 1.17228e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_28 -->
+    <collision>
+      <origin xyz="0.150178 -0.123096 0.169212" rpy="-6.38378e-15 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_28.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_28_2 -->
+    <collision>
+      <origin xyz="0.0448977 -0.0874143 0.15592" rpy="-1.5708 1.20559e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_28.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_28_3 -->
+    <collision>
+      <origin xyz="0.150178 -0.0360952 0.153401" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_28.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part upper_floor -->
+    <collision>
+      <origin xyz="0.128323 -0.143974 0.140507" rpy="-1.5708 8.42988e-14 -6.38378e-15"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/upper_floor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 2nd_floor -->
+    <collision>
+      <origin xyz="0.128323 -0.0152176 0.0715065" rpy="1.5708 -8.45209e-14 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/2nd_floor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part front_pillar -->
+    <collision>
+      <origin xyz="0.0193221 -0.151596 0.0795065" rpy="1.5708 -1.18338e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/front_pillar.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part front_pillar_2 -->
+    <collision>
+      <origin xyz="0.0263221 -0.00759563 0.0795065" rpy="1.5708 1.18338e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/front_pillar.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part front_pillar_3 -->
+    <collision>
+      <origin xyz="0.136322 -0.00759563 0.0795065" rpy="1.5708 1.15007e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/front_pillar.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part front_pillar_4 -->
+    <collision>
+      <origin xyz="0.129322 -0.151596 0.132507" rpy="-1.5708 8.40144e-14 -6.27276e-15"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/front_pillar.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part pcnel_exch -->
+    <collision>
+      <origin xyz="0.0798221 -0.0795956 0.137507" rpy="-1.5708 8.40699e-14 -5.88418e-15"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/pcnel_exch.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spacer_bracket_id_1_19_2_mir -->
+    <collision>
+      <origin xyz="0.106369 -0.0429089 0.158268" rpy="1.5708 1.17228e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/spacer_bracket_id_1_19_2_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part handle_bracket_kidsize -->
+    <collision>
+      <origin xyz="0.0570232 -0.0115956 0.144507" rpy="-1.5708 8.42988e-14 -6.38378e-15"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/handle_bracket_kidsize.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_5mm_bracket_servo_1_2_left -->
+    <collision>
+      <origin xyz="0.111116 -0.0384589 0.163369" rpy="1.5708 1.17228e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_5mm_bracket_servo_1_2_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part handle -->
+    <collision>
+      <origin xyz="0.00752319 -0.0795956 0.197506" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/handle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part holder_bumper_upper -->
+    <collision>
+      <origin xyz="0.00345196 -0.146309 0.213757" rpy="1.5708 1.15007e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/holder_bumper_upper.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part handler_holder_siber -->
+    <collision>
+      <origin xyz="0.125023 -0.138096 0.102506" rpy="1.5708 -8.42988e-14 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/handler_holder_siber.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bracket_1_2_lower_left -->
+    <collision>
+      <origin xyz="0.111372 -0.0131089 0.165055" rpy="1.5708 -1.17228e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/bracket_1_2_lower_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part front_upper_bumper -->
+    <collision>
+      <origin xyz="0.156888 -0.150809 0.160907" rpy="1.5708 -1.15007e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/front_upper_bumper.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part petg_5_19_mx28_seating -->
+    <collision>
+      <origin xyz="0.123288 -0.0671053 0.147757" rpy="-1.5708 -1.16118e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/petg_5_19_mx28_seating.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_5mm_bracket_servo_1_2 -->
+    <collision>
+      <origin xyz="0.111116 -0.120732 0.163369" rpy="1.5708 -1.16118e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_5mm_bracket_servo_1_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spacer_bracket_id_1_19_2 -->
+    <collision>
+      <origin xyz="0.106369 -0.116282 0.158268" rpy="1.5708 -1.18338e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/spacer_bracket_id_1_19_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part handler_holder_siber_2 -->
+    <collision>
+      <origin xyz="0.125023 -0.0110956 0.102506" rpy="1.5708 -8.42988e-14 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/handler_holder_siber.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part front_upper_bumper_mir -->
+    <collision>
+      <origin xyz="0.156888 -0.00860891 0.160907" rpy="1.5708 1.15007e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/front_upper_bumper_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part handle_bracket_kidsize_2 -->
+    <collision>
+      <origin xyz="0.0570232 -0.147596 0.144507" rpy="-1.5708 8.29458e-14 -5.88418e-15"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/handle_bracket_kidsize.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bracket_1_2_lower -->
+    <collision>
+      <origin xyz="0.111372 -0.146082 0.165055" rpy="1.5708 1.17228e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/bracket_1_2_lower.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bumper_front_lower_mir -->
+    <collision>
+      <origin xyz="0.15952 -0.0110956 0.0494707" rpy="1.5708 1.20559e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/bumper_front_lower_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spacer_106_64_mir2 -->
+    <collision>
+      <origin xyz="0.106179 -0.127432 0.0615065" rpy="3.14159 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/spacer_106_64_mir2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part holder_lower_bracket_mir -->
+    <collision>
+      <origin xyz="0.13102 -0.0387981 0.0911788" rpy="-1.5708 1.20559e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/holder_lower_bracket_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_floor_2nd__1 -->
+    <collision>
+      <origin xyz="0.0815688 -0.0832551 0.0275065" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_floor_2nd__1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spacer_106_64_mir2_mir -->
+    <collision>
+      <origin xyz="0.106177 -0.031759 0.0615065" rpy="-6.55032e-15 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/spacer_106_64_mir2_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part back_bumper -->
+    <collision>
+      <origin xyz="0.0368205 -0.0148956 0.0485065" rpy="1.5708 -8.45209e-14 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/back_bumper.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part xt_bracket -->
+    <collision>
+      <origin xyz="0.0238205 -0.0487956 0.0275065" rpy="-8.45209e-14 1.17228e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/xt_bracket.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part battery_holder -->
+    <collision>
+      <origin xyz="0.135821 -0.0795956 0.0225065" rpy="1.5708 -8.45209e-14 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/battery_holder.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part back_bumper_2 -->
+    <collision>
+      <origin xyz="0.0368205 -0.144296 0.0485065" rpy="-1.5708 -8.45209e-14 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/back_bumper.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bracket_back_bumper -->
+    <collision>
+      <origin xyz="0.0348205 -0.0343956 0.0495065" rpy="1.5708 1.17228e-14 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/bracket_back_bumper.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part holder_lower_bracket -->
+    <collision>
+      <origin xyz="0.131022 -0.120393 0.0911788" rpy="-1.5708 -1.17228e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/holder_lower_bracket.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part xt_bracket_2 -->
+    <collision>
+      <origin xyz="0.0278205 -0.110396 0.0275065" rpy="8.45209e-14 -1.18338e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/xt_bracket.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bumper_front_lower -->
+    <collision>
+      <origin xyz="0.159522 -0.148096 0.0494707" rpy="1.5708 -1.17228e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/bumper_front_lower.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bracket_back_bumper_mir -->
+    <collision>
+      <origin xyz="0.0348205 -0.124796 0.0495065" rpy="1.5708 -1.18338e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/bracket_back_bumper_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part torso_kidsize25_parts -->
+    <visual>
+      <origin xyz="0.0857013 -0.0796011 0.0976927" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/torso_kidsize25_visual.stl"/>
+      </geometry>
+      <material name="torso_kidsize25_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Frame trunk (dummy link + fixed joint) -->
+  <link name="trunk">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="trunk_frame" type="fixed">
+    <origin xyz="0.0725996 -0.0795956 -0.0134935" rpy="8.46644e-14 8.4854e-14 -6.99441e-15"/>
+    <parent link="torso_kidsize25"/>
+    <child link="trunk"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Link neck -->
+  <link name="neck">
+    <inertial>
+      <origin xyz="2.39298e-07 1.05071e-17 0.00879985" rpy="0 0 0"/>
+      <mass value="0.0128985"/>
+      <inertia ixx="5.01235e-06" ixy="2.63324e-11" ixz="-9.38605e-13" iyy="2.39998e-06" iyz="9.52912e-22" izz="4.13467e-06"/>
+    </inertial>
+    <!-- Part almi_4mm_neck_bracket -->
+    <!-- <collision>
+      <origin xyz="0.0128945 -0.0185 0" rpy="1.5708 -0 -4.56398e-31"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_4mm_neck_bracket.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part carbon_2mm_neck_side_plate -->
+    <!-- <collision>
+      <origin xyz="5e-07 -0.0205 0.02" rpy="1.5708 -1.26218e-29 5.55112e-17"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/carbon_2mm_neck_side_plate.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part carbon_2mm_neck_side_plate_2 -->
+    <!-- <collision>
+      <origin xyz="1.38778e-17 0.0225 0.02" rpy="1.5708 -0 -5.55112e-17"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/carbon_2mm_neck_side_plate.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part neck_parts -->
+    <visual>
+      <origin xyz="2.39298e-07 0 0.00879985" rpy="-1.17228e-14 -8.42988e-14 -3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/neck_visual.stl"/>
+      </geometry>
+      <material name="neck_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link head -->
+  <link name="head">
+    <inertial>
+      <origin xyz="0.0315459 -0.00214801 0.0205645" rpy="0 0 0"/>
+      <mass value="0.371554"/>
+      <inertia ixx="0.000238323" ixy="4.47308e-05" ixz="-2.28198e-07" iyy="0.000308835" iyz="-2.79152e-07" izz="0.000217343"/>
+    </inertial>
+    <!-- Part petg_2mm_headbracket_old -->
+    <collision>
+      <origin xyz="-0.0064 0.0265 0.0386" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/petg_2mm_headbracket_old.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part camera_logitech_c920_offset_2mm -->
+    <collision>
+      <origin xyz="0.0256 0.00182638 0.06759" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/camera_logitech_c920_offset_2mm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part camera_frame -->
+    <collision>
+      <origin xyz="0.0251 -0.0215 0.0535485" rpy="3.14159 -5.55112e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/camera_frame.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_28_4 -->
+    <collision>
+      <origin xyz="0.0079054 0.0653899 0.0287863" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_28.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part petg_2mm_rotatingheadbracket -->
+    <collision>
+      <origin xyz="-0.0064 0.0265 0.0386" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/petg_2mm_rotatingheadbracket.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part head_parts -->
+    <visual>
+      <origin xyz="0.0315459 -0.00214801 0.0205645" rpy="-1.5708 7.66054e-15 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/head_visual.stl"/>
+      </geometry>
+      <material name="head_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Frame camera (dummy link + fixed joint) -->
+  <link name="camera">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="camera_frame" type="fixed">
+    <origin xyz="0.03692 -0.0232161 0.0206" rpy="-1.5708 4.11884e-14 -1.5708"/>
+    <parent link="head"/>
+    <child link="camera"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from neck to head -->
+  <joint name="head_pitch" type="revolute">
+    <origin xyz="5e-07 -0.0205 0.037" rpy="-1.5708 -1.5708 0"/>
+    <parent link="neck"/>
+    <child link="head"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-1.5708" upper="0.392699"/>
+  </joint>
+  <!-- Joint from torso_kidsize25 to neck -->
+  <joint name="head_yaw" type="revolute">
+    <origin xyz="0.110288 -0.0795089 0.184707" rpy="-1.17228e-14 -8.42988e-14 3.14159"/>
+    <parent link="torso_kidsize25"/>
+    <child link="neck"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-3.14159" upper="3.14159"/>
+  </joint>
+  <!-- Link almi2_view_6_7__arm_bracket -->
+  <link name="almi2_view_6_7__arm_bracket">
+    <inertial>
+      <origin xyz="-1.11022e-16 0.00223841 -0.00829596" rpy="0 0 0"/>
+      <mass value="0.0151289"/>
+      <inertia ixx="2.57897e-06" ixy="1.32575e-37" ixz="2.76139e-36" iyy="5.57377e-06" iyz="4.04961e-07" izz="5.85595e-06"/>
+    </inertial>
+    <!-- Part almi2_view_6_7__arm_bracket -->
+    <!-- <collision>
+      <origin xyz="0.0185 -0.012 -0.002" rpy="1.5708 -3.27376e-31 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi2_view_6_7__arm_bracket.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part almi2_view_6_7__arm_bracket_parts -->
+    <visual>
+      <origin xyz="-1.11022e-16 0.00223841 -0.00829596" rpy="1.5708 -6.55032e-15 -8.45209e-14"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/almi2_view_6_7__arm_bracket_visual.stl"/>
+      </geometry>
+      <material name="almi2_view_6_7__arm_bracket_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link right_upperhand -->
+  <link name="right_upperhand">
+    <inertial>
+      <origin xyz="-4.16556e-05 -0.0497057 -0.0229115" rpy="0 0 0"/>
+      <mass value="0.178"/>
+      <inertia ixx="0.000293103" ixy="-7.35413e-07" ixz="-2.0111e-08" iyy="3.4849e-05" iyz="-1.67161e-05" izz="0.00029267"/>
+    </inertial>
+    <!-- Part mx_28_5 -->
+    <collision>
+      <origin xyz="0.00818918 -0.0341201 -0.0335054" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_28.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_28_6 -->
+    <collision>
+      <origin xyz="0.0079054 -0.0653899 -0.0287863" rpy="-1.5708 1.26218e-29 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_28.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi2_view_13__14__arm -->
+    <collision>
+      <origin xyz="-0.0819971 -0.058605 -0.0256" rpy="0 -1.11022e-16 1.11022e-16"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi2_view_13__14__arm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part right_upperhand_parts -->
+    <visual>
+      <origin xyz="-4.16556e-05 -0.0497057 -0.0229115" rpy="-0.716634 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/right_upperhand_visual.stl"/>
+      </geometry>
+      <material name="right_upperhand_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link right_lowerhand -->
+  <link name="right_lowerhand">
+    <inertial>
+      <origin xyz="-0.00130389 -0.103918 0.0103596" rpy="0 0 0"/>
+      <mass value="0.149258"/>
+      <inertia ixx="0.000225269" ixy="-7.02224e-06" ixz="-1.20544e-07" iyy="5.61474e-05" iyz="-3.26703e-05" izz="0.000240431"/>
+    </inertial>
+    <!-- Part almi_4_5mm_connector_lower_arm_kidsize -->
+    <collision>
+      <origin xyz="0.00225 -0.0405 8.32667e-17" rpy="1.5708 2.22045e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_4_5mm_connector_lower_arm_kidsize.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part carbon_2mm_arm_kidsize_1 -->
+    <!-- <collision>
+      <origin xyz="0 -2.77556e-17 2.77556e-17" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/carbon_2mm_arm_kidsize_1.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part tpu_arm_kidsize_telapak -->
+    <collision>
+      <origin xyz="2.77556e-17 -0.14 0.0728" rpy="1.5708 -2.22045e-16 5.05395e-17"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/tpu_arm_kidsize_telapak.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part carbon_2mm_arm_kidsize_2 -->
+    <!-- <collision>
+      <origin xyz="4.16334e-17 -1.66533e-16 0.043" rpy="-5.05395e-17 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/carbon_2mm_arm_kidsize_2.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part right_lowerhand_parts -->
+    <visual>
+      <origin xyz="-0.00130389 -0.103918 0.0103596" rpy="2.42496 5.965e-14 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/right_lowerhand_visual.stl"/>
+      </geometry>
+      <material name="right_lowerhand_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Frame right_hand (dummy link + fixed joint) -->
+  <link name="right_hand">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="right_hand_frame" type="fixed">
+    <origin xyz="0 -0.1425 0.0215" rpy="-1.5708 1.5708 0"/>
+    <parent link="right_lowerhand"/>
+    <child link="right_hand"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from right_upperhand to right_lowerhand -->
+  <joint name="right_elbow" type="revolute">
+    <origin xyz="-0.0205971 -0.09951 -0.0256" rpy="-2.22045e-16 1.5708 0"/>
+    <parent link="right_upperhand"/>
+    <child link="right_lowerhand"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-2.35619" upper="2.35619"/>
+  </joint>
+  <!-- Joint from almi2_view_6_7__arm_bracket to right_upperhand -->
+  <joint name="right_shoulder_roll" type="revolute">
+    <origin xyz="0.0205 0.0147498 -0.0268034" rpy="1.5708 -0.716634 1.5708"/>
+    <parent link="almi2_view_6_7__arm_bracket"/>
+    <child link="right_upperhand"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-2.35619" upper="0.785398"/>
+  </joint>
+  <!-- Joint from torso_kidsize25 to almi2_view_6_7__arm_bracket -->
+  <joint name="right_shoulder_pitch" type="revolute">
+    <origin xyz="0.0847882 -0.151882 0.161307" rpy="-1.5708 8.45209e-14 -6.55032e-15"/>
+    <parent link="torso_kidsize25"/>
+    <child link="almi2_view_6_7__arm_bracket"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-3.14159" upper="3.14159"/>
+  </joint>
+  <!-- Link almi2_view_6_7__arm_bracket_2 -->
+  <link name="almi2_view_6_7__arm_bracket_2">
+    <inertial>
+      <origin xyz="-8.32667e-17 -0.00223841 0.00829596" rpy="0 0 0"/>
+      <mass value="0.0151289"/>
+      <inertia ixx="2.57897e-06" ixy="4.54163e-39" ixz="9.45973e-38" iyy="5.57377e-06" iyz="4.04961e-07" izz="5.85595e-06"/>
+    </inertial>
+    <!-- Part almi2_view_6_7__arm_bracket_2 -->
+    <!-- <collision>
+      <origin xyz="0.0185 0.012 0.002" rpy="-1.5708 -1.1215e-32 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi2_view_6_7__arm_bracket.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part almi2_view_6_7__arm_bracket_2_parts -->
+    <visual>
+      <origin xyz="-9.71445e-17 -0.00223841 0.00829596" rpy="1.5708 -6.38378e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/almi2_view_6_7__arm_bracket_2_visual.stl"/>
+      </geometry>
+      <material name="almi2_view_6_7__arm_bracket_2_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link left_upperhand -->
+  <link name="left_upperhand">
+    <inertial>
+      <origin xyz="-0.0388142 0.0310502 -0.0182021" rpy="0 0 0"/>
+      <mass value="0.178"/>
+      <inertia ixx="0.000135047" ixy="0.000125863" ixz="1.18959e-05" iyy="0.00019276" iyz="-9.5078e-06" izz="0.00029267"/>
+    </inertial>
+    <!-- Part mx_28_7 -->
+    <collision>
+      <origin xyz="-0.0215049 0.027727 -0.0076946" rpy="-0.67556 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_28.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi2_view_13__14__arm_2 -->
+    <collision>
+      <origin xyz="-0.0970085 -0.0273393 -0.0156" rpy="3.14159 3.33067e-16 0.895236"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi2_view_13__14__arm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_28_8 -->
+    <collision>
+      <origin xyz="-0.0559709 0.0347215 -0.0287863" rpy="-1.5708 1.11022e-16 -2.24636"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_28.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part left_upperhand_parts -->
+    <visual>
+      <origin xyz="-0.0388142 0.0310502 -0.0182021" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/left_upperhand_visual.stl"/>
+      </geometry>
+      <material name="left_upperhand_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link left_lowerhand -->
+  <link name="left_lowerhand">
+    <inertial>
+      <origin xyz="-0.00130389 0.103918 -0.0103596" rpy="0 0 0"/>
+      <mass value="0.149258"/>
+      <inertia ixx="0.000225269" ixy="7.02224e-06" ixz="1.20544e-07" iyy="5.61474e-05" iyz="-3.26703e-05" izz="0.000240431"/>
+    </inertial>
+    <!-- Part carbon_2mm_arm_kidsize_1_2 -->
+    <!-- <collision>
+      <origin xyz="-1.38778e-17 3.81639e-17 2.77556e-17" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/carbon_2mm_arm_kidsize_1.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part tpu_arm_kidsize_telapak_2 -->
+    <collision>
+      <origin xyz="4.16334e-17 0.14 -0.0728" rpy="-1.5708 1.11022e-16 -6.87736e-16"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/tpu_arm_kidsize_telapak.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_4_5mm_connector_lower_arm_kidsize_2 -->
+    <collision>
+      <origin xyz="0.00225 0.0405 2.77556e-17" rpy="-1.5708 -1.11022e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_4_5mm_connector_lower_arm_kidsize.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part carbon_2mm_arm_kidsize_2_2 -->
+    <!-- <collision>
+      <origin xyz="-4.16334e-17 5.20417e-17 -0.043" rpy="3.14159 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/carbon_2mm_arm_kidsize_2.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part left_lowerhand_parts -->
+    <visual>
+      <origin xyz="-0.00130389 0.103918 -0.0103596" rpy="0.67556 -6.99484e-14 -4.78722e-14"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/left_lowerhand_visual.stl"/>
+      </geometry>
+      <material name="left_lowerhand_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Frame left_hand (dummy link + fixed joint) -->
+  <link name="left_hand">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="left_hand_frame" type="fixed">
+    <origin xyz="5.55112e-17 0.1425 0.0235" rpy="1.5708 1.5708 0"/>
+    <parent link="left_lowerhand"/>
+    <child link="left_hand"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from left_upperhand to left_lowerhand -->
+  <joint name="left_elbow" type="revolute">
+    <origin xyz="-0.0905334 0.0461539 -0.0156" rpy="0.895236 -1.5708 0"/>
+    <parent link="left_upperhand"/>
+    <child link="left_lowerhand"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-2.35619" upper="2.35619"/>
+  </joint>
+  <!-- Joint from almi2_view_6_7__arm_bracket_2 to left_upperhand -->
+  <joint name="left_shoulder_roll" type="revolute">
+    <origin xyz="-0.0205 -0.0147498 0.0268034" rpy="-3.14159 1.5708 0"/>
+    <parent link="almi2_view_6_7__arm_bracket_2"/>
+    <child link="left_upperhand"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="5.52" velocity="6.8" lower="-0.785398" upper="2.35619"/>
+  </joint>
+  <!-- Joint from torso_kidsize25 to almi2_view_6_7__arm_bracket_2 -->
+  <joint name="left_shoulder_pitch" type="revolute">
+    <origin xyz="0.0847882 -0.00730891 0.161307" rpy="1.5708 -8.45209e-14 3.14159"/>
+    <parent link="torso_kidsize25"/>
+    <child link="almi2_view_6_7__arm_bracket_2"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="5.52" velocity="6.8" lower="-3.14159" upper="3.14159"/>
+  </joint>
+  <!-- Link stainless_steel_2mm_upper_leg_bracket -->
+  <link name="stainless_steel_2mm_upper_leg_bracket">
+    <inertial>
+      <origin xyz="-0.00421162 -1.80642e-07 -0.00839045" rpy="0 0 0"/>
+      <mass value="0.0521561"/>
+      <inertia ixx="1.13163e-05" ixy="-2.66522e-10" ixz="-2.03733e-07" iyy="2.97089e-05" iyz="3.66542e-11" izz="2.98236e-05"/>
+    </inertial>
+    <!-- Part stainless_steel_2mm_upper_leg_bracket -->
+    <!-- <collision>
+      <origin xyz="-0.03298 0.016 3.46945e-18" rpy="3.14159 -0 -4.14136e-33"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_upper_leg_bracket.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part stainless_steel_2mm_upper_leg_bracket_parts -->
+    <visual>
+      <origin xyz="-0.00421162 -1.80642e-07 -0.00839045" rpy="-1.16616e-14 -8.45582e-14 5.71765e-15"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/stainless_steel_2mm_upper_leg_bracket_visual.stl"/>
+      </geometry>
+      <material name="stainless_steel_2mm_upper_leg_bracket_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link foot_right_1 -->
+  <link name="foot_right_1">
+    <inertial>
+      <origin xyz="-0.000121825 -0.0144674 0.00397654" rpy="0 0 0"/>
+      <mass value="0.292396"/>
+      <inertia ixx="0.000302471" ixy="-1.95767e-07" ixz="7.69534e-07" iyy="0.00026243" iyz="-1.25976e-05" izz="0.000113113"/>
+    </inertial>
+    <!-- Part mx_64t_2 -->
+    <collision>
+      <origin xyz="0 -1.73472e-18 -0.0235" rpy="0 2.62498e-31 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_fr05_f101k_set -->
+    <collision>
+      <origin xyz="0 -1.04083e-17 0.04958" rpy="-1.5708 -9.2139e-28 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_fr05_f101k_set.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_connector_mx64 -->
+    <collision>
+      <origin xyz="-0.019 -0.043 0.01058" rpy="-2.62498e-31 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_connector_mx64_2 -->
+    <collision>
+      <origin xyz="0.019 -0.015 0.01058" rpy="2.62498e-31 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fr05_f101k_set -->
+    <collision>
+      <origin xyz="-2.498e-16 3.98986e-17 0.04938" rpy="-2.77556e-16 9.2139e-28 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/fr05_f101k_set.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_64t_2_2 -->
+    <collision>
+      <origin xyz="-2.77556e-17 -1.38778e-17 0.02558" rpy="1.91457e-27 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mf128zz_1 -->
+    <collision>
+      <origin xyz="-2.22045e-16 3.64292e-17 0.0516" rpy="1.5708 -9.2139e-28 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mf128zz_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rx64_cap_1 -->
+    <collision>
+      <origin xyz="-2.498e-16 3.64292e-17 0.05508" rpy="2.22045e-16 -9.2139e-28 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/rx64_cap_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hn05_i101_1 -->
+    <collision>
+      <origin xyz="-2.498e-16 3.64292e-17 0.05532" rpy="1.5708 -9.2139e-28 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/hn05_i101_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rx64_cap_1_2 -->
+    <collision>
+      <origin xyz="-0.0232 -1.38778e-17 0.02558" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/rx64_cap_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hn05_i101_1_2 -->
+    <collision>
+      <origin xyz="-0.02344 -1.21431e-17 0.02558" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/hn05_i101_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mf128zz_1_2 -->
+    <collision>
+      <origin xyz="-0.01972 -1.38778e-17 0.02558" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mf128zz_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_right_1_parts -->
+    <visual>
+      <origin xyz="-0.000121825 -0.0144674 0.00397654" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/foot_right_1_visual.stl"/>
+      </geometry>
+      <material name="foot_right_1_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link foot_right_2 -->
+  <link name="foot_right_2">
+    <inertial>
+      <origin xyz="0.00189202 -0.0890217 0.0236304" rpy="0 0 0"/>
+      <mass value="0.273181"/>
+      <inertia ixx="0.00054925" ixy="-3.23355e-06" ixz="6.73937e-08" iyy="0.000131243" iyz="8.86444e-07" izz="0.000472641"/>
+    </inertial>
+    <!-- Part stainless_steel_2mm__femur -->
+    <!-- <collision>
+      <origin xyz="-0.014 -0.07746 0.047" rpy="1.5708 -5.55112e-17 -4.85723e-17"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm__femur.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part stainless_steel_2mm__femur_2 -->
+    <!-- <collision>
+      <origin xyz="-0.014 -0.07746 -0.003" rpy="1.5708 1.55341e-31 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm__femur.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part almi_6_5mm_l_mx64 -->
+    <collision>
+      <origin xyz="-0.0134121 -0.0859 0.047" rpy="-1.5708 2.22045e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_6_5mm_l_mx64.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_6_5mm_l_mx64_2 -->
+    <collision>
+      <origin xyz="-0.0134121 -0.0859 0.0065" rpy="-1.5708 7.21645e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_6_5mm_l_mx64.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_64t_1 -->
+    <collision>
+      <origin xyz="-6.52256e-16 -0.134 0.0235" rpy="-3.14159 -7.21645e-16 -6.52256e-16"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hn05_i101 -->
+    <collision>
+      <origin xyz="-6.66134e-16 -0.134 0.04694" rpy="1.5708 -8.88178e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/hn05_i101.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mf128zz -->
+    <collision>
+      <origin xyz="-6.52256e-16 -0.134 0.04322" rpy="1.5708 -9.15934e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mf128zz.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rx64_cap -->
+    <collision>
+      <origin xyz="-6.66134e-16 -0.134 0.0467" rpy="7.21645e-16 2.08167e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/rx64_cap.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_right_2_parts -->
+    <visual>
+      <origin xyz="0.00189202 -0.0890217 0.0236304" rpy="-1.5708 5.82867e-15 7.58221e-14"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/foot_right_2_visual.stl"/>
+      </geometry>
+      <material name="foot_right_2_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link foot_right_3 -->
+  <link name="foot_right_3">
+    <inertial>
+      <origin xyz="0.00350206 -0.0535427 0.0235017" rpy="0 0 0"/>
+      <mass value="0.157154"/>
+      <inertia ixx="0.000266743" ixy="-8.33375e-06" ixz="-5.26492e-09" iyy="0.000115972" iyz="-6.48605e-09" izz="0.000200186"/>
+    </inertial>
+    <!-- Part stainless_steel_2mm_leg_spacer -->
+    <collision>
+      <origin xyz="0.024 -0.0190814 0.045" rpy="-3.14159 2.22045e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_leg_spacer.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part stainless_steel_2mm_shinebone -->
+    <!-- <collision>
+      <origin xyz="0.0135 -0.0197269 0.05" rpy="-1.5708 -5.55112e-16 -3.1225e-16"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_shinebone.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part stainless_steel_2mm_shinebone_2 -->
+    <!-- <collision>
+      <origin xyz="0.0135 -0.0197269 -1.38778e-17" rpy="-1.5708 -1.37312e-32 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_shinebone.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part foot_right_3_parts -->
+    <visual>
+      <origin xyz="0.00350206 -0.0535427 0.0235017" rpy="-1.5708 6.55032e-15 9.07281e-14"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/foot_right_3_visual.stl"/>
+      </geometry>
+      <material name="foot_right_3_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link foot_right_4 -->
+  <link name="foot_right_4">
+    <inertial>
+      <origin xyz="-0.0215978 0.0144558 0.0236219" rpy="0 0 0"/>
+      <mass value="0.292143"/>
+      <inertia ixx="0.000112946" ixy="1.25976e-05" ixz="-7.69336e-07" iyy="0.000262476" iyz="-2.05088e-07" izz="0.000302507"/>
+    </inertial>
+    <!-- Part mx_64t_3 -->
+    <collision>
+      <origin xyz="-0.04908 -5.55112e-17 0.0235" rpy="3.14159 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fr05_f101k_set_1 -->
+    <collision>
+      <origin xyz="0.024 4.58208e-05 0.0235" rpy="1.5708 1.57772e-30 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/fr05_f101k_set_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_connector_mx64_1 -->
+    <collision>
+      <origin xyz="-0.015 0.015 0.0425" rpy="-1.5708 -2.54013e-28 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_connector_mx64_1_2 -->
+    <collision>
+      <origin xyz="-0.015 0.043 0.0045" rpy="1.5708 1.57772e-30 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_64t_3_2 -->
+    <collision>
+      <origin xyz="0 0 0.0235" rpy="3.14159 1.93948e-31 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_fr05_f101k_set_1 -->
+    <collision>
+      <origin xyz="0.024 0 0.0235" rpy="3.14159 -1.57772e-30 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_fr05_f101k_set_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hn05_i101_2 -->
+    <collision>
+      <origin xyz="1.38778e-17 -5.55112e-17 0.04694" rpy="1.5708 -3.33067e-16 -7.63278e-17"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/hn05_i101_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mf128zz_2 -->
+    <collision>
+      <origin xyz="1.38778e-17 -5.55112e-17 0.04322" rpy="1.5708 -2.22045e-16 -1.80411e-16"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mf128zz_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rx64_cap_2 -->
+    <collision>
+      <origin xyz="0 -5.55112e-17 0.0467" rpy="2.52435e-29 -2.22045e-16 6.93889e-17"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/rx64_cap_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mf128zz_2_2 -->
+    <collision>
+      <origin xyz="0.02622 4.58208e-05 0.0235" rpy="-3.14159 -1.18329e-29 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mf128zz_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hn05_i101_2_2 -->
+    <collision>
+      <origin xyz="0.02994 4.58208e-05 0.0235" rpy="-3.14159 1.57772e-30 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/hn05_i101_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rx64_cap_2_2 -->
+    <collision>
+      <origin xyz="0.0297 4.58208e-05 0.0235" rpy="1.5708 -3.62876e-29 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/rx64_cap_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_right_4_parts -->
+    <visual>
+      <origin xyz="-0.0215978 0.0144558 0.0236219" rpy="-1.5708 6.55032e-15 2.75899e-14"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/foot_right_4_visual.stl"/>
+      </geometry>
+      <material name="foot_right_4_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link foot_right_5 -->
+  <link name="foot_right_5">
+    <inertial>
+      <origin xyz="-0.00431494 -0.027932 0.0410276" rpy="0 0 0"/>
+      <mass value="0.132192"/>
+      <inertia ixx="0.000177533" ixy="-1.91248e-06" ixz="5.63401e-06" iyy="0.000221544" iyz="8.6074e-07" izz="6.06598e-05"/>
+    </inertial>
+    <!-- Part pla_50__shoes -->
+    <collision>
+      <origin xyz="-0.04925 -0.032 0.10376" rpy="-2.52435e-28 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/pla_50__shoes.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_lower_leg -->
+    <collision>
+      <origin xyz="-0.00775 -0.032 0.02876" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_lower_leg.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part stainless_steel_2mm_lower_leg_bracket -->
+    <!-- <collision>
+      <origin xyz="-0.016 -0.032 0.00052" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_lower_leg_bracket.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part foot_right_5_parts -->
+    <visual>
+      <origin xyz="-0.00431494 -0.027932 0.0410276" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/foot_right_5_visual.stl"/>
+      </geometry>
+      <material name="foot_right_5_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Frame right_foot (dummy link + fixed joint) -->
+  <link name="right_foot">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="right_foot_frame" type="fixed">
+    <origin xyz="3.56104e-14 -0.046 0.0335" rpy="-1.5708 -1.5708 0"/>
+    <parent link="foot_right_5"/>
+    <child link="right_foot"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from foot_right_4 to foot_right_5 -->
+  <joint name="right_ankle_roll" type="revolute">
+    <origin xyz="-0.02558 -5.55112e-17 0.0235" rpy="1.89327e-29 1.5708 0"/>
+    <parent link="foot_right_4"/>
+    <child link="foot_right_5"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-1.0472" upper="1.0472"/>
+  </joint>
+  <!-- Joint from foot_right_3 to foot_right_4 -->
+  <joint name="right_ankle_pitch" type="revolute">
+    <origin xyz="-1.11022e-16 -0.111702 1.38778e-17" rpy="2.75312e-28 -4.08611e-27 6.31382e-14"/>
+    <parent link="foot_right_3"/>
+    <child link="foot_right_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Joint from foot_right_2 to foot_right_3 -->
+  <joint name="right_knee" type="revolute">
+    <origin xyz="-6.38378e-16 -0.134 -1.38778e-17" rpy="2.08167e-16 -7.21645e-16 -1.4906e-14"/>
+    <parent link="foot_right_2"/>
+    <child link="foot_right_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-2.35619" upper="2.35619"/>
+  </joint>
+  <!-- Joint from foot_right_1 to foot_right_2 -->
+  <joint name="right_hip_pitch" type="revolute">
+    <origin xyz="0.0235 -1.21431e-17 0.02558" rpy="-1.90589e-27 -1.5708 0"/>
+    <parent link="foot_right_1"/>
+    <child link="foot_right_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-1.1781" upper="1.9635"/>
+  </joint>
+  <!-- Joint from stainless_steel_2mm_upper_leg_bracket to foot_right_1 -->
+  <joint name="right_hip_roll" type="revolute">
+    <origin xyz="-0.0335 3.55826e-14 -0.032" rpy="1.5708 7.73086e-15 1.5708"/>
+    <parent link="stainless_steel_2mm_upper_leg_bracket"/>
+    <child link="foot_right_1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-1.5708" upper="0.785398"/>
+  </joint>
+  <!-- Joint from torso_kidsize25 to stainless_steel_2mm_upper_leg_bracket -->
+  <joint name="right_hip_yaw" type="revolute">
+    <origin xyz="0.0805216 -0.129096 0.0210065" rpy="1.16616e-14 8.45582e-14 -5.71765e-15"/>
+    <parent link="torso_kidsize25"/>
+    <child link="stainless_steel_2mm_upper_leg_bracket"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-0.785398" upper="1.5708"/>
+  </joint>
+  <!-- Link stainless_steel_2mm_upper_leg_bracket_mir -->
+  <link name="stainless_steel_2mm_upper_leg_bracket_mir">
+    <inertial>
+      <origin xyz="-0.00421162 1.80642e-07 -0.00839045" rpy="0 0 0"/>
+      <mass value="0.0521561"/>
+      <inertia ixx="1.13163e-05" ixy="2.66522e-10" ixz="-2.03733e-07" iyy="2.97089e-05" iyz="-3.66542e-11" izz="2.98236e-05"/>
+    </inertial>
+    <!-- Part stainless_steel_2mm_upper_leg_bracket_mir -->
+    <!-- <collision>
+      <origin xyz="-0.03298 -0.016 0" rpy="0 -0 4.31032e-31"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_upper_leg_bracket_mir.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part stainless_steel_2mm_upper_leg_bracket_mir_parts -->
+    <visual>
+      <origin xyz="-0.00421162 1.80642e-07 -0.00839045" rpy="-1.16616e-14 -8.45209e-14 7.60503e-15"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/stainless_steel_2mm_upper_leg_bracket_mir_visual.stl"/>
+      </geometry>
+      <material name="stainless_steel_2mm_upper_leg_bracket_mir_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link foot_left_1 -->
+  <link name="foot_left_1">
+    <inertial>
+      <origin xyz="-0.000121924 0.0144559 0.00398223" rpy="0 0 0"/>
+      <mass value="0.292143"/>
+      <inertia ixx="0.000302507" ixy="1.96526e-07" ixz="7.69256e-07" iyy="0.000262475" iyz="1.25975e-05" izz="0.000112946"/>
+    </inertial>
+    <!-- Part mx_64t_mir_1 -->
+    <collision>
+      <origin xyz="-3.46945e-18 -1.73472e-18 -0.0235" rpy="3.14159 5.03347e-31 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_fr05_f101k_set_mir -->
+    <collision>
+      <origin xyz="-3.46945e-18 1.73472e-18 0.04958" rpy="-1.5708 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_fr05_f101k_set_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_connector_mx64_mir -->
+    <collision>
+      <origin xyz="-0.019 0.043 0.01058" rpy="3.14159 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fr05_f101k_set_mir -->
+    <collision>
+      <origin xyz="-2.498e-16 4.58208e-05 0.04958" rpy="3.14159 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/fr05_f101k_set_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_connector_mx64_mir_2 -->
+    <collision>
+      <origin xyz="0.019 0.015 0.01058" rpy="-3.14159 -2.47387e-27 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_64t_mir_1_2 -->
+    <collision>
+      <origin xyz="3.46945e-18 -5.20417e-18 0.02558" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mf128zz_mir_1 -->
+    <collision>
+      <origin xyz="-2.5327e-16 4.58208e-05 0.0518" rpy="1.5708 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mf128zz_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hn05_i101_mir_1 -->
+    <collision>
+      <origin xyz="-2.42861e-16 4.58208e-05 0.05552" rpy="1.5708 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/hn05_i101_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rx64_cap_mir_1 -->
+    <collision>
+      <origin xyz="-2.5327e-16 4.58208e-05 0.05528" rpy="-3.14159 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/rx64_cap_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rx64_cap_mir_1_2 -->
+    <collision>
+      <origin xyz="-0.0232 0 0.02558" rpy="1.5708 1.26218e-29 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/rx64_cap_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hn05_i101_mir_1_2 -->
+    <collision>
+      <origin xyz="-0.02344 -1.73472e-18 0.02558" rpy="-1.66533e-16 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/hn05_i101_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mf128zz_mir_1_2 -->
+    <collision>
+      <origin xyz="-0.01972 0 0.02558" rpy="-1.66533e-16 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mf128zz_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_left_1_parts -->
+    <visual>
+      <origin xyz="-0.000121924 0.0144559 0.00398223" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/foot_left_1_visual.stl"/>
+      </geometry>
+      <material name="foot_left_1_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link foot_left_2 -->
+  <link name="foot_left_2">
+    <inertial>
+      <origin xyz="0.00189202 0.0890217 0.0236304" rpy="0 0 0"/>
+      <mass value="0.273181"/>
+      <inertia ixx="0.00054925" ixy="3.23354e-06" ixz="6.73963e-08" iyy="0.000131243" iyz="-8.86436e-07" izz="0.000472641"/>
+    </inertial>
+    <!-- Part mx_64t_mir -->
+    <collision>
+      <origin xyz="-5.96745e-16 0.134 0.0235" rpy="-1.48306e-28 6.74185e-31 -8.83524e-29"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part stainless_steel_2mm__femur_mir -->
+    <!-- <collision>
+      <origin xyz="-0.014 0.07746 0.047" rpy="1.5708 6.74185e-31 -1.00974e-28"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm__femur_mir.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part stainless_steel_2mm__femur_mir_2 -->
+    <!-- <collision>
+      <origin xyz="-0.014 0.07746 -0.003" rpy="1.5708 6.74185e-31 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm__femur_mir.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part almi_6_5mm_l_mx64_mir -->
+    <collision>
+      <origin xyz="-0.0134121 0.0859 0.0065" rpy="-1.5708 -6.74185e-31 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_6_5mm_l_mx64_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_6_5mm_l_mx64_mir_2 -->
+    <collision>
+      <origin xyz="-0.0134121 0.0859 0.047" rpy="-1.5708 -6.74185e-31 3.14159"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_6_5mm_l_mx64_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hn05_i101_mir -->
+    <collision>
+      <origin xyz="-5.82867e-16 0.134 0.04694" rpy="1.5708 1.41995e-28 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/hn05_i101_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rx64_cap_mir -->
+    <collision>
+      <origin xyz="-5.82867e-16 0.134 0.0467" rpy="3.14159 1.37262e-28 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/rx64_cap_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mf128zz_mir -->
+    <collision>
+      <origin xyz="-5.82867e-16 0.134 0.04322" rpy="1.5708 1.3884e-28 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mf128zz_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_left_2_parts -->
+    <visual>
+      <origin xyz="0.00189202 0.0890217 0.0236304" rpy="1.5708 -7.60503e-15 -8.29288e-14"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/foot_left_2_visual.stl"/>
+      </geometry>
+      <material name="foot_left_2_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link foot_left_3 -->
+  <link name="foot_left_3">
+    <inertial>
+      <origin xyz="0.00350206 0.0535427 0.0235017" rpy="0 0 0"/>
+      <mass value="0.157154"/>
+      <inertia ixx="0.000266743" ixy="8.33375e-06" ixz="-5.26492e-09" iyy="0.000115972" iyz="6.48605e-09" izz="0.000200186"/>
+    </inertial>
+    <!-- Part stainless_steel_2mm_shinebone_mir -->
+    <!-- <collision>
+      <origin xyz="0.0135 0.0197269 0.05" rpy="-1.5708 3.88578e-16 1.26218e-29"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_shinebone_mir.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part stainless_steel_2mm_leg_spacer_mir -->
+    <collision>
+      <origin xyz="0.024 0.0190814 0.045" rpy="-1.11022e-16 -0 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_leg_spacer_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part stainless_steel_2mm_shinebone_mir_2 -->
+    <!-- <collision>
+      <origin xyz="0.0135 0.0197269 -6.93889e-18" rpy="-1.5708 -7.94227e-32 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_shinebone_mir.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part foot_left_3_parts -->
+    <visual>
+      <origin xyz="0.00350206 0.0535427 0.0235017" rpy="1.5708 -7.60503e-15 -8.97346e-14"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/foot_left_3_visual.stl"/>
+      </geometry>
+      <material name="foot_left_3_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link foot_left_4 -->
+  <link name="foot_left_4">
+    <inertial>
+      <origin xyz="-0.0215978 -0.0144559 0.0236219" rpy="0 0 0"/>
+      <mass value="0.292143"/>
+      <inertia ixx="0.000112946" ixy="-1.25975e-05" ixz="-7.69402e-07" iyy="0.000262475" iyz="2.05066e-07" izz="0.000302507"/>
+    </inertial>
+    <!-- Part mx_64t_mir_2 -->
+    <collision>
+      <origin xyz="-0.04908 -5.55112e-17 0.0235" rpy="-0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_mir_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_connector_mx64_mir_1 -->
+    <collision>
+      <origin xyz="-0.015 -0.015 0.0425" rpy="-1.5708 9.46633e-30 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fr05_f101k_set_mir_1 -->
+    <collision>
+      <origin xyz="0.024 -4.58208e-05 0.0235" rpy="1.5708 2.22045e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/fr05_f101k_set_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mx_64t_mir_2_2 -->
+    <collision>
+      <origin xyz="0 0 0.0235" rpy="0 6.81683e-31 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mx_64t_mir_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_fr05_f101k_set_mir_1 -->
+    <collision>
+      <origin xyz="0.024 5.55112e-17 0.0235" rpy="-1.11022e-16 -2.22045e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_fr05_f101k_set_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part almi_2mm_connector_mx64_mir_1_2 -->
+    <collision>
+      <origin xyz="-0.015 -0.043 0.0045" rpy="1.5708 4.19674e-28 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64_mir_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hn05_i101_mir_2 -->
+    <collision>
+      <origin xyz="1.38778e-17 0 0.04694" rpy="1.5708 6.81683e-31 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/hn05_i101_mir_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mf128zz_mir_2 -->
+    <collision>
+      <origin xyz="1.38778e-17 0 0.04322" rpy="1.5708 6.81683e-31 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mf128zz_mir_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rx64_cap_mir_2 -->
+    <collision>
+      <origin xyz="0 5.55112e-17 0.0467" rpy="-3.14159 6.81683e-31 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/rx64_cap_mir_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mf128zz_mir_2_2 -->
+    <collision>
+      <origin xyz="0.02622 -4.58208e-05 0.0235" rpy="1.66533e-16 2.22045e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/mf128zz_mir_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hn05_i101_mir_2_2 -->
+    <collision>
+      <origin xyz="0.02994 -4.58208e-05 0.0235" rpy="1.11022e-16 2.22045e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/hn05_i101_mir_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rx64_cap_mir_2_2 -->
+    <collision>
+      <origin xyz="0.0297 -4.58208e-05 0.0235" rpy="1.5708 2.22045e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/rx64_cap_mir_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_left_4_parts -->
+    <visual>
+      <origin xyz="-0.0215978 -0.0144559 0.0236219" rpy="1.5708 -7.60503e-15 -9.09004e-14"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/foot_left_4_visual.stl"/>
+      </geometry>
+      <material name="foot_left_4_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Link foot_left_5 -->
+  <link name="foot_left_5">
+    <inertial>
+      <origin xyz="-0.00577513 0.0300863 0.0389132" rpy="0 0 0"/>
+      <mass value="0.229936"/>
+      <inertia ixx="0.000336096" ixy="2.89074e-06" ixz="4.67383e-06" iyy="0.000437543" iyz="5.55837e-07" izz="0.000121048"/>
+    </inertial>
+    <!-- Part almi_2mm_lower_leg_mir -->
+    <collision>
+      <origin xyz="-0.00775 0.032 0.02876" rpy="-5.55112e-16 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/almi_2mm_lower_leg_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part stainless_steel_2mm_lower_leg_bracket_mir -->
+    <!-- <collision>
+      <origin xyz="-0.016 0.032 0.00052" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_lower_leg_bracket_mir.stl"/>
+      </geometry>
+    </collision> -->
+    <!-- Part pla_50__shoes_mir -->
+    <collision>
+      <origin xyz="-0.04925 0.032 0.10376" rpy="-3.14159 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/pla_50__shoes_mir.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_left_5_parts -->
+    <visual>
+      <origin xyz="-0.00577513 0.0300863 0.0389132" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://gijitaiken_webots/protos/hiro_textures/merged/foot_left_5_visual.stl"/>
+      </geometry>
+      <material name="foot_left_5_parts_material">
+        <color rgba="0.55972 0.560028 0.558638 1"/>
+      </material>
+    </visual>
+  </link>
+  <!-- Frame left_foot (dummy link + fixed joint) -->
+  <link name="left_foot">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="left_foot_frame" type="fixed">
+    <origin xyz="3.56035e-14 0.046 0.0335" rpy="1.5708 -1.5708 0"/>
+    <parent link="foot_left_5"/>
+    <child link="left_foot"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from foot_left_4 to foot_left_5 -->
+  <joint name="left_ankle_roll" type="revolute">
+    <origin xyz="-0.02558 5.55112e-17 0.0235" rpy="2.52435e-29 1.5708 0"/>
+    <parent link="foot_left_4"/>
+    <child link="foot_left_5"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-1.0472" upper="1.0472"/>
+  </joint>
+  <!-- Joint from foot_left_3 to foot_left_4 -->
+  <joint name="left_ankle_pitch" type="revolute">
+    <origin xyz="-8.32667e-17 0.111702 0" rpy="-4.7805e-28 -6.71604e-29 1.16573e-15"/>
+    <parent link="foot_left_3"/>
+    <child link="foot_left_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Joint from foot_left_2 to foot_left_3 -->
+  <joint name="left_knee" type="revolute">
+    <origin xyz="-6.10623e-16 0.134 1.38778e-17" rpy="-6.46866e-29 -3.75577e-28 6.80584e-15"/>
+    <parent link="foot_left_2"/>
+    <child link="foot_left_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-2.35619" upper="2.35619"/>
+  </joint>
+  <!-- Joint from foot_left_1 to foot_left_2 -->
+  <joint name="left_hip_pitch" type="revolute">
+    <origin xyz="0.0235 -2.25514e-17 0.02558" rpy="-1.11022e-16 -1.5708 0"/>
+    <parent link="foot_left_1"/>
+    <child link="foot_left_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-1.9635" upper="1.1781"/>
+  </joint>
+  <!-- Joint from stainless_steel_2mm_upper_leg_bracket_mir to foot_left_1 -->
+  <joint name="left_hip_roll" type="revolute">
+    <origin xyz="-0.0335 -3.56139e-14 -0.032" rpy="-1.5708 -7.03169e-17 -1.5708"/>
+    <parent link="stainless_steel_2mm_upper_leg_bracket_mir"/>
+    <child link="foot_left_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="5.52" velocity="6.8" lower="-0.785398" upper="1.5708"/>
+  </joint>
+  <!-- Joint from torso_kidsize25 to stainless_steel_2mm_upper_leg_bracket_mir -->
+  <joint name="left_hip_yaw" type="revolute">
+    <origin xyz="0.08052 -0.0300956 0.0210065" rpy="1.16616e-14 8.45209e-14 -7.60503e-15"/>
+    <parent link="torso_kidsize25"/>
+    <child link="stainless_steel_2mm_upper_leg_bracket_mir"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="5.52" velocity="6.8" lower="-1.5708" upper="0.785398"/>
+  </joint>
+  <webots>
+    <plugin type="gijitaiken_webots.driver.controller.robot_controller.RobotController" />
+
+    <device reference="camera_sensor" type="webots_ros2_driver::Ros2Camera">
+      <ros>
+        <topicName>/camera/image</topicName>
+        <frameName>camera</frameName>
+      </ros>
+    </device>
+
+    <device reference="imu" type="webots_ros2_driver::Ros2IMU">
+      <ros>
+        <topicName>/imu</topicName> 
+        <enabled>true</enabled>
+        <alwaysOn>true</alwaysOn>
+        <frameName>imu_link</frameName>
+        <inertialUnitName>imu</inertialUnitName>
+        <gyroName>gyro</gyroName>
+        <accelerometerName>accelerometer</accelerometerName>
+      </ros>
+    </device>
+  </webots>
+</robot>

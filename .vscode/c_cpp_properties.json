@@ -1,0 +1,55 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/musyaree/ros2_ws/install/aruku/include/**",
+        "/home/musyaree/ros2_ws/install/akushon/include/**",
+        "/home/musyaree/ros2_ws/install/tachimawari_interfaces/include/**",
+        "/home/musyaree/ros2_ws/install/kansei_interfaces/include/**",
+        "/home/musyaree/ros2_ws/install/aruku_interfaces/include/**",
+        "/home/musyaree/ros2_ws/install/akushon_interfaces/include/**",
+        "/home/musyaree/ichiro-ws/install/soccer/include/**",
+        "/home/musyaree/ichiro-ws/install/suiryoku/include/**",
+        "/home/musyaree/ichiro-ws/install/atama/include/**",
+        "/home/musyaree/ichiro-ws/install/aruku/include/**",
+        "/home/musyaree/ichiro-ws/install/kansei/include/**",
+        "/home/musyaree/ichiro-ws/install/akushon/include/**",
+        "/home/musyaree/ichiro-ws/install/tachimawari/include/**",
+        "/home/musyaree/ichiro-ws/install/tachimawari_interfaces/include/**",
+        "/home/musyaree/ichiro-ws/install/suiryoku_interfaces/include/**",
+        "/home/musyaree/ichiro-ws/install/soccer_interfaces/include/**",
+        "/home/musyaree/ichiro-ws/install/ninshiki_cpp/include/**",
+        "/home/musyaree/ichiro-ws/install/shisen_cpp/include/**",
+        "/home/musyaree/ichiro-ws/install/shisen_interfaces/include/**",
+        "/home/musyaree/ichiro-ws/install/humanoid_base_footprint/include/**",
+        "/home/musyaree/ichiro-ws/install/rot_conv/include/**",
+        "/home/musyaree/ichiro-ws/install/ninshiki_interfaces/include/**",
+        "/home/musyaree/ichiro-ws/install/jitsuyo/include/**",
+        "/home/musyaree/ichiro-ws/install/keisan/include/**",
+        "/home/musyaree/ichiro-ws/install/kansei_interfaces/include/**",
+        "/home/musyaree/ichiro-ws/install/image_geometry/include/**",
+        "/home/musyaree/ichiro-ws/install/cv_bridge/include/**",
+        "/home/musyaree/ichiro-ws/install/biped_interfaces/include/**",
+        "/home/musyaree/ichiro-ws/install/atama_interfaces/include/**",
+        "/home/musyaree/ichiro-ws/install/aruku_interfaces/include/**",
+        "/home/musyaree/ichiro-ws/install/akushon_interfaces/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/musyaree/ros2_ws/src/akushon/include/**",
+        "/home/musyaree/ros2_ws/src/aruku/include/**",
+        "/home/musyaree/ros2_ws/src/aruku_node/include/**",
+        "/home/musyaree/ros2_ws/src/my_cpp_pkg/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

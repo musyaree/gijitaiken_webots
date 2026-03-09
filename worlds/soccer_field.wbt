@@ -1,0 +1,2410 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/robotstadium/protos/RobotstadiumSoccerField.proto"
+
+WorldInfo {
+  basicTimeStep 8
+  FPS 30
+  contactProperties [
+    ContactProperties {
+      softCFM 1e-05
+      maxContactJoints 1
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.2670481298527858 -0.02264582774017878 0.9634170762593384 3.304637746744293
+  position 0.4389423313171583 -0.0072095905010688835 0.7897234826991911
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RobotstadiumSoccerField {
+}
+Robot {
+  translation 0 0.1 0.4
+  children [
+    Pose {
+      translation 0.085701 -0.079601 0.097693
+      children [
+        Shape {
+          appearance DEF torso_kidsize25_parts_material PBRAppearance {
+            baseColor 0.55972 0.560028 0.558638
+            roughness 1
+            metalness 0
+          }
+          geometry DEF torso_kidsize25_visual Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/torso_kidsize25_visual.stl"
+            ]
+          }
+        }
+      ]
+    }
+    Solid {
+      translation 0.0726 -0.079596 -0.013494
+      name "trunk"
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 0 1
+        anchor 0.110288 -0.079509 0.184707
+      }
+      device [
+        RotationalMotor {
+          name "head_yaw"
+          maxVelocity 6.8
+          minPosition -3.14159
+          maxPosition 3.14159
+          maxTorque 5.52
+        }
+        PositionSensor {
+          name "head_yaw_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.110288 -0.079509 0.184707
+        rotation 0 0 1 3.14159
+        children [
+          Pose {
+            translation 0 0 0.0088
+            rotation 0 0 -1 3.14159
+            children [
+              Shape {
+                appearance DEF neck_parts_material PBRAppearance {
+                  baseColor 0.55972 0.560028 0.558638
+                  roughness 1
+                  metalness 0
+                }
+                geometry DEF neck_visual Mesh {
+                  url [
+                    "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/neck_visual.stl"
+                  ]
+                }
+              }
+            ]
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 4e-06 1 0
+              anchor 0 -0.0205 0.037
+            }
+            device [
+              RotationalMotor {
+                name "head_pitch"
+                maxVelocity 6.8
+                minPosition -1.5708
+                maxPosition 0.392699
+                maxTorque 5.52
+              }
+              PositionSensor {
+                name "head_pitch_sensor"
+              }
+            ]
+            endPoint Solid {
+              translation 0 -0.0205 0.037
+              rotation -0.5773496025226482 -0.5773496025226482 -0.5773516025212713 2.094399
+              children [
+                Pose {
+                  translation 0.031546 -0.002148 0.020564
+                  rotation -0.5773496025226483 0.5773516025212714 -0.5773496025226483 2.094399
+                  children [
+                    Shape {
+                      appearance DEF head_parts_material PBRAppearance {
+                        baseColor 0.55972 0.560028 0.558638
+                        roughness 1
+                        metalness 0
+                      }
+                      geometry DEF head_visual Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/head_visual.stl"
+                        ]
+                      }
+                    }
+                  ]
+                }
+                Camera {
+                  translation 0.04 -0.023216 0.0206
+                  rotation -0.5773496025226483 0.5773516025212714 -0.5773496025226483 2.094399
+                  name "camera_sensor"
+                  recognitionColors [
+                    1 0 0
+                  ]
+                  fieldOfView 1
+                  width 640
+                  height 480
+                }
+              ]
+              name "head"
+              boundingObject Group {
+                children [
+                  Pose {
+                    translation -0.0064 0.0265 0.0386
+                    rotation 0.5773496025226482 0.5773496025226482 -0.5773516025212713 2.094399
+                    children [
+                      DEF petg_2mm_headbracket_old Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/petg_2mm_headbracket_old.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0.0256 0.001826 0.06759
+                    rotation 0.5773496025226482 0.5773496025226482 -0.5773516025212713 2.094399
+                    children [
+                      DEF camera_logitech_c920_offset_2mm Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/camera_logitech_c920_offset_2mm.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0.0251 -0.0215 0.053548
+                    rotation 0.7071052811840065 0.7071082811851994 1.0000003976552372e-06 3.141591
+                    children [
+                      DEF camera_frame Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/camera_frame.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0.007905 0.06539 0.028786
+                    rotation 1 0 0 1.5708
+                    children [
+                      DEF mx_28 Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mx_28.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.0064 0.0265 0.0386
+                    rotation 0.5773496025226482 0.5773496025226482 -0.5773516025212713 2.094399
+                    children [
+                      DEF petg_2mm_rotatingheadbracket Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/petg_2mm_rotatingheadbracket.stl"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.371554
+                centerOfMass [
+                  0.031546 -0.002148 0.020564
+                ]
+                inertiaMatrix [
+                  0.000238323 0.000308835 0.000217343
+                  4.47308e-05 -2.28198e-07 -2.79152e-07
+                ]
+              }
+            }
+          }
+        ]
+        name "neck"
+        physics Physics {
+          density -1
+          mass 0.012899
+          centerOfMass [
+            0 0 0.0088
+          ]
+          inertiaMatrix [
+            5.01235e-06 2.39998e-06 4.13467e-06
+            2.63324e-11 -9.38605e-13 9.52912e-22
+          ]
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 1 -4e-06
+        anchor 0.084788 -0.151882 0.161307
+      }
+      device [
+        RotationalMotor {
+          name "right_shoulder_pitch"
+          maxVelocity 6.8
+          minPosition -3.14159
+          maxPosition 3.14159
+          maxTorque 5.52
+        }
+        PositionSensor {
+          name "right_shoulder_pitch_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.084788 -0.151882 0.161307
+        rotation -1 0 0 1.5708
+        children [
+          Pose {
+            translation 0 0.002238 -0.008296
+            rotation 1 0 0 1.5708
+            children [
+              Shape {
+                appearance DEF almi2_view_6_7__arm_bracket_parts_material PBRAppearance {
+                  baseColor 0.55972 0.560028 0.558638
+                  roughness 1
+                  metalness 0
+                }
+                geometry DEF almi2_view_6_7__arm_bracket_visual Mesh {
+                  url [
+                    "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi2_view_6_7__arm_bracket_visual.stl"
+                  ]
+                }
+              }
+            ]
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 1 6e-06 -3e-06
+              anchor 0.0205 0.01475 -0.026803
+            }
+            device [
+              RotationalMotor {
+                name "right_shoulder_roll"
+                maxVelocity 6.8
+                minPosition -2.35619
+                maxPosition 0.785398
+                maxTorque 5.52
+              }
+              PositionSensor {
+                name "right_shoulder_roll_sensor"
+              }
+            ]
+            endPoint Solid {
+              translation 0.0205 0.01475 -0.026803
+              rotation 0.6731126960563673 0.3063308616764838 0.6731126960563673 2.547091
+              children [
+                Pose {
+                  translation -4.2e-05 -0.049706 -0.022912
+                  rotation -0.3309369509860901 -0.8837198691153528 -0.33093795098594203 1.694101
+                  children [
+                    Shape {
+                      appearance DEF right_upperhand_parts_material PBRAppearance {
+                        baseColor 0.55972 0.560028 0.558638
+                        roughness 1
+                        metalness 0
+                      }
+                      geometry DEF right_upperhand_visual Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/right_upperhand_visual.stl"
+                        ]
+                      }
+                    }
+                  ]
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis 1 0 -4e-06
+                    anchor -0.020597 -0.09951 -0.0256
+                  }
+                  device [
+                    RotationalMotor {
+                      name "right_elbow"
+                      maxVelocity 6.8
+                      minPosition -2.35619
+                      maxPosition 2.35619
+                      maxTorque 5.52
+                    }
+                    PositionSensor {
+                      name "right_elbow_sensor"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.020597 -0.09951 -0.0256
+                    rotation 0 1 0 1.5708
+                    children [
+                      Pose {
+                        translation -0.001304 -0.103918 0.01036
+                        rotation 9.999996328372022e-07 0.9364886561560788 0.3506978712367412 3.141592
+                        children [
+                          Shape {
+                            appearance DEF right_lowerhand_parts_material PBRAppearance {
+                              baseColor 0.55972 0.560028 0.558638
+                              roughness 1
+                              metalness 0
+                            }
+                            geometry DEF right_lowerhand_visual Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/right_lowerhand_visual.stl"
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                      Solid {
+                        translation 0 -0.1425 0.0215
+                        rotation -0.5773496025226482 0.5773496025226482 0.5773516025212713 2.094399
+                        name "right_hand"
+                      }
+                    ]
+                    name "right_lowerhand"
+                    boundingObject Group {
+                      children [
+                        Pose {
+                          translation 0.00225 -0.0405 0
+                          rotation 1.0000003976552372e-06 -0.7071082811851994 -0.7071052811840065 3.141591
+                          children [
+                            DEF almi_4_5mm_connector_lower_arm_kidsize Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_4_5mm_connector_lower_arm_kidsize.stl"
+                              ]
+                            }
+                          ]
+                        }
+                        Pose {
+                          translation 0 -0.14 0.0728
+                          rotation 1 0 0 1.5708
+                          children [
+                            DEF tpu_arm_kidsize_telapak Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/tpu_arm_kidsize_telapak.stl"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.149258
+                      centerOfMass [
+                        -0.001304 -0.103918 0.01036
+                      ]
+                      inertiaMatrix [
+                        0.000225269 5.61474e-05 0.000240431
+                        -7.02224e-06 -1.20544e-07 -3.26703e-05
+                      ]
+                    }
+                  }
+                }
+              ]
+              name "right_upperhand"
+              boundingObject Group {
+                children [
+                  Pose {
+                    translation 0.008189 -0.03412 -0.033505
+                    rotation 0.5773496025226482 0.5773496025226482 -0.5773516025212713 2.094399
+                    children [
+                      USE mx_28
+                    ]
+                  }
+                  Pose {
+                    translation 0.007905 -0.06539 -0.028786
+                    rotation -1 0 0 1.5708
+                    children [
+                      USE mx_28
+                    ]
+                  }
+                  Pose {
+                    translation -0.081997 -0.058605 -0.0256
+                    children [
+                      DEF almi2_view_13__14__arm Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi2_view_13__14__arm.stl"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.178
+                centerOfMass [
+                  -4.2e-05 -0.049706 -0.022912
+                ]
+                inertiaMatrix [
+                  0.000293103 3.4849e-05 0.00029267
+                  -7.35413e-07 -2.0111e-08 -1.67161e-05
+                ]
+              }
+            }
+          }
+        ]
+        name "almi2_view_6_7__arm_bracket"
+        physics Physics {
+          density -1
+          mass 0.015129
+          centerOfMass [
+            0 0.002238 -0.008296
+          ]
+          inertiaMatrix [
+            2.57897e-06 5.57377e-06 5.85595e-06
+            1.32575e-37 2.76139e-36 4.04961e-07
+          ]
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 3e-06 1 -4e-06
+        anchor 0.084788 -0.007309 0.161307
+      }
+      device [
+        RotationalMotor {
+          name "left_shoulder_pitch"
+          maxVelocity 6.8
+          minPosition -3.14159
+          maxPosition 3.14159
+          maxTorque 5.52
+        }
+        PositionSensor {
+          name "left_shoulder_pitch_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.084788 -0.007309 0.161307
+        rotation 1.0000003976552372e-06 0.7071082811851994 0.7071052811840065 3.141591
+        children [
+          Pose {
+            translation 0 -0.002238 0.008296
+            rotation 1.0000003976552372e-06 0.7071082811851994 0.7071052811840065 3.141591
+            children [
+              Shape {
+                appearance DEF almi2_view_6_7__arm_bracket_2_parts_material PBRAppearance {
+                  baseColor 0.55972 0.560028 0.558638
+                  roughness 1
+                  metalness 0
+                }
+                geometry DEF almi2_view_6_7__arm_bracket_2_visual Mesh {
+                  url [
+                    "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi2_view_6_7__arm_bracket_2_visual.stl"
+                  ]
+                }
+              }
+            ]
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis -1 3e-06 4e-06
+              anchor -0.0205 -0.01475 0.026803
+            }
+            device [
+              RotationalMotor {
+                name "left_shoulder_roll"
+                maxVelocity 6.8
+                minPosition -0.785398
+                maxPosition 2.35619
+                maxTorque 5.52
+              }
+              PositionSensor {
+                name "left_shoulder_roll_sensor"
+              }
+            ]
+            endPoint Solid {
+              translation -0.0205 -0.01475 0.026803
+              rotation -0.7071052811840065 1.0000003976552372e-06 0.7071082811851994 3.141591
+              children [
+                Pose {
+                  translation -0.038814 0.03105 -0.018202
+                  rotation 0.5773496025226482 -0.5773496025226482 0.5773516025212713 2.094399
+                  children [
+                    Shape {
+                      appearance DEF left_upperhand_parts_material PBRAppearance {
+                        baseColor 0.55972 0.560028 0.558638
+                        roughness 1
+                        metalness 0
+                      }
+                      geometry DEF left_upperhand_visual Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/left_upperhand_visual.stl"
+                        ]
+                      }
+                    }
+                  ]
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis -0.625335 -0.780357 -2e-06
+                    anchor -0.090533 0.046154 -0.0156
+                  }
+                  device [
+                    RotationalMotor {
+                      name "left_elbow"
+                      maxVelocity 6.8
+                      minPosition -2.35619
+                      maxPosition 2.35619
+                      maxTorque 5.52
+                    }
+                    PositionSensor {
+                      name "left_elbow_sensor"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.090533 0.046154 -0.0156
+                    rotation 0.39720899547221467 -0.8273139905694479 0.39721099547219185 1.759245
+                    children [
+                      Pose {
+                        translation -0.001304 0.103918 -0.01036
+                        rotation 1 0 0 0.67556
+                        children [
+                          Shape {
+                            appearance DEF left_lowerhand_parts_material PBRAppearance {
+                              baseColor 0.55972 0.560028 0.558638
+                              roughness 1
+                              metalness 0
+                            }
+                            geometry DEF left_lowerhand_visual Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/left_lowerhand_visual.stl"
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                      Solid {
+                        translation 0 0.1425 0.0235
+                        rotation 0.5773496025226482 0.5773496025226482 -0.5773516025212713 2.094399
+                        name "left_hand"
+                      }
+                    ]
+                    name "left_lowerhand"
+                    boundingObject Group {
+                      children [
+                        Pose {
+                          translation 0 0.14 -0.0728
+                          rotation -1 0 0 1.5708
+                          children [
+                            USE tpu_arm_kidsize_telapak
+                          ]
+                        }
+                        Pose {
+                          translation 0.00225 0.0405 0
+                          rotation -1.0000003976552372e-06 -0.7071082811851994 0.7071052811840065 3.141591
+                          children [
+                            USE almi_4_5mm_connector_lower_arm_kidsize
+                          ]
+                        }
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.149258
+                      centerOfMass [
+                        -0.001304 0.103918 -0.01036
+                      ]
+                      inertiaMatrix [
+                        0.000225269 5.61474e-05 0.000240431
+                        7.02224e-06 1.20544e-07 -3.26703e-05
+                      ]
+                    }
+                  }
+                }
+              ]
+              name "left_upperhand"
+              boundingObject Group {
+                children [
+                  Pose {
+                    translation -0.021505 0.027727 -0.007695
+                    rotation -0.3145689786286562 -0.8955959391545574 -0.31456997862858826 1.680843
+                    children [
+                      USE mx_28
+                    ]
+                  }
+                  Pose {
+                    translation -0.097008 -0.027339 -0.0156
+                    rotation 0.9014808737372455 0.4328189393787344 9.999998599385294e-07 3.14159
+                    children [
+                      USE almi2_view_13__14__arm
+                    ]
+                  }
+                  Pose {
+                    translation -0.055971 0.034722 -0.028786
+                    rotation -0.3214750800481086 0.6695731667254131 -0.6695711667249152 2.519515
+                    children [
+                      USE mx_28
+                    ]
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.178
+                centerOfMass [
+                  -0.038814 0.03105 -0.018202
+                ]
+                inertiaMatrix [
+                  0.000135047 0.00019276 0.00029267
+                  0.000125863 1.18959e-05 -9.5078e-06
+                ]
+              }
+            }
+          }
+        ]
+        name "almi2_view_6_7__arm_bracket_2"
+        physics Physics {
+          density -1
+          mass 0.015129
+          centerOfMass [
+            0 -0.002238 0.008296
+          ]
+          inertiaMatrix [
+            2.57897e-06 5.57377e-06 5.85595e-06
+            4.54163e-39 9.45973e-38 4.04961e-07
+          ]
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 0 1
+        anchor 0.080522 -0.129096 0.021007
+      }
+      device [
+        RotationalMotor {
+          name "right_hip_yaw"
+          maxVelocity 6.8
+          minPosition -0.785398
+          maxPosition 1.5708
+          maxTorque 5.52
+        }
+        PositionSensor {
+          name "right_hip_yaw_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.080522 -0.129096 0.021007
+        children [
+          Pose {
+            translation -0.004212 0 -0.00839
+            children [
+              Shape {
+                appearance DEF stainless_steel_2mm_upper_leg_bracket_parts_material PBRAppearance {
+                  baseColor 0.55972 0.560028 0.558638
+                  roughness 1
+                  metalness 0
+                }
+                geometry DEF stainless_steel_2mm_upper_leg_bracket_visual Mesh {
+                  url [
+                    "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_upper_leg_bracket_visual.stl"
+                  ]
+                }
+              }
+            ]
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 1 4e-06 -4e-06
+              anchor -0.0335 0 -0.032
+            }
+            device [
+              RotationalMotor {
+                name "right_hip_roll"
+                maxVelocity 6.8
+                minPosition -1.5708
+                maxPosition 0.785398
+                maxTorque 5.52
+              }
+              PositionSensor {
+                name "right_hip_roll_sensor"
+              }
+            ]
+            endPoint Solid {
+              translation -0.0335 0 -0.032
+              rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+              children [
+                Pose {
+                  translation -0.000122 -0.014467 0.003977
+                  rotation -0.5773496025226482 -0.5773496025226482 -0.5773516025212713 2.094399
+                  children [
+                    Shape {
+                      appearance DEF foot_right_1_parts_material PBRAppearance {
+                        baseColor 0.55972 0.560028 0.558638
+                        roughness 1
+                        metalness 0
+                      }
+                      geometry DEF foot_right_1_visual Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/foot_right_1_visual.stl"
+                        ]
+                      }
+                    }
+                  ]
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis -1 0 -4e-06
+                    anchor 0.0235 0 0.02558
+                  }
+                  device [
+                    RotationalMotor {
+                      name "right_hip_pitch"
+                      maxVelocity 6.8
+                      minPosition -1.1781
+                      maxPosition 1.9635
+                      maxTorque 5.52
+                    }
+                    PositionSensor {
+                      name "right_hip_pitch_sensor"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.0235 0 0.02558
+                    rotation 0 -1 0 1.5708
+                    children [
+                      Pose {
+                        translation 0.001892 -0.089022 0.02363
+                        rotation -1 0 0 1.5708
+                        children [
+                          Shape {
+                            appearance DEF foot_right_2_parts_material PBRAppearance {
+                              baseColor 0.55972 0.560028 0.558638
+                              roughness 1
+                              metalness 0
+                            }
+                            geometry DEF foot_right_2_visual Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/foot_right_2_visual.stl"
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                      HingeJoint {
+                        jointParameters HingeJointParameters {
+                          axis 0 0 1
+                          anchor 0 -0.134 0
+                        }
+                        device [
+                          RotationalMotor {
+                            name "right_knee"
+                            maxVelocity 6.8
+                            minPosition -2.35619
+                            maxPosition 2.35619
+                            maxTorque 5.52
+                          }
+                          PositionSensor {
+                            name "right_knee_sensor"
+                          }
+                        ]
+                        endPoint Solid {
+                          translation 0 -0.134 0
+                          children [
+                            Pose {
+                              translation 0.003502 -0.053543 0.023502
+                              rotation -1 0 0 1.5708
+                              children [
+                                Shape {
+                                  appearance DEF foot_right_3_parts_material PBRAppearance {
+                                    baseColor 0.55972 0.560028 0.558638
+                                    roughness 1
+                                    metalness 0
+                                  }
+                                  geometry DEF foot_right_3_visual Mesh {
+                                    url [
+                                      "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/foot_right_3_visual.stl"
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                            HingeJoint {
+                              jointParameters HingeJointParameters {
+                                axis 0 0 1
+                                anchor 0 -0.111702 0
+                              }
+                              device [
+                                RotationalMotor {
+                                  name "right_ankle_pitch"
+                                  maxVelocity 6.8
+                                  minPosition -1.5708
+                                  maxPosition 1.5708
+                                  maxTorque 5.52
+                                }
+                                PositionSensor {
+                                  name "right_ankle_pitch_sensor"
+                                }
+                              ]
+                              endPoint Solid {
+                                translation 0 -0.111702 0
+                                children [
+                                  Pose {
+                                    translation -0.021598 0.014456 0.023622
+                                    rotation -1 0 0 1.5708
+                                    children [
+                                      Shape {
+                                        appearance DEF foot_right_4_parts_material PBRAppearance {
+                                          baseColor 0.55972 0.560028 0.558638
+                                          roughness 1
+                                          metalness 0
+                                        }
+                                        geometry DEF foot_right_4_visual Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/foot_right_4_visual.stl"
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                  HingeJoint {
+                                    jointParameters HingeJointParameters {
+                                      axis 1 0 -4e-06
+                                      anchor -0.02558 0 0.0235
+                                    }
+                                    device [
+                                      RotationalMotor {
+                                        name "right_ankle_roll"
+                                        maxVelocity 6.8
+                                        minPosition -1.0472
+                                        maxPosition 1.0472
+                                        maxTorque 5.52
+                                      }
+                                      PositionSensor {
+                                        name "right_ankle_roll_sensor"
+                                      }
+                                    ]
+                                    endPoint Solid {
+                                      translation -0.02558 0 0.0235
+                                      rotation 0 1 0 1.5708
+                                      children [
+                                        Pose {
+                                          translation -0.004315 -0.027932 0.041028
+                                          rotation -0.5773496025226482 -0.5773496025226482 -0.5773516025212713 2.094399
+                                          children [
+                                            Shape {
+                                              appearance DEF foot_right_5_parts_material PBRAppearance {
+                                                baseColor 0.55972 0.560028 0.558638
+                                                roughness 1
+                                                metalness 0
+                                              }
+                                              geometry DEF foot_right_5_visual Mesh {
+                                                url [
+                                                  "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/foot_right_5_visual.stl"
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                        Solid {
+                                          translation 0 -0.046 0.0335
+                                          rotation -0.5773496025226482 -0.5773496025226482 -0.5773516025212713 2.094399
+                                          name "right_foot"
+                                        }
+                                      ]
+                                      name "foot_right_5"
+                                      boundingObject Group {
+                                        children [
+                                          Pose {
+                                            translation -0.04925 -0.032 0.10376
+                                            rotation 0 -1 0 1.5708
+                                            children [
+                                              DEF pla_50__shoes Mesh {
+                                                url [
+                                                  "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/pla_50__shoes.stl"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                          Pose {
+                                            translation -0.00775 -0.032 0.02876
+                                            rotation -0.7071052811840065 1.0000003976552372e-06 0.7071082811851994 3.141591
+                                            children [
+                                              DEF almi_2mm_lower_leg Mesh {
+                                                url [
+                                                  "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_lower_leg.stl"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                      physics Physics {
+                                        density -1
+                                        mass 0.132192
+                                        centerOfMass [
+                                          -0.004315 -0.027932 0.041028
+                                        ]
+                                        inertiaMatrix [
+                                          0.000177533 0.000221544 6.06598e-05
+                                          -1.91248e-06 5.63401e-06 8.6074e-07
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                                name "foot_right_4"
+                                boundingObject Group {
+                                  children [
+                                    Pose {
+                                      translation -0.04908 0 0.0235
+                                      rotation 0.7071052811840065 -1.0000003976552372e-06 0.7071082811851994 3.141591
+                                      children [
+                                        DEF mx_64t_3 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mx_64t_3.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.024 4.6e-05 0.0235
+                                      rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+                                      children [
+                                        DEF fr05_f101k_set_1 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/fr05_f101k_set_1.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation -0.015 0.015 0.0425
+                                      rotation -0.5773496025226483 0.5773516025212714 -0.5773496025226483 2.094399
+                                      children [
+                                        DEF almi_2mm_connector_mx64_1 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64_1.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation -0.015 0.043 0.0045
+                                      rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+                                      children [
+                                        USE almi_2mm_connector_mx64_1
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0 0 0.0235
+                                      rotation 1 0 0 3.14159
+                                      children [
+                                        USE mx_64t_3
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.024 0 0.0235
+                                      rotation 0.7071052811840065 -0.7071082811851994 -1.0000003976552372e-06 3.141591
+                                      children [
+                                        DEF almi_2mm_fr05_f101k_set_1 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_fr05_f101k_set_1.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0 0 0.04694
+                                      rotation 1 0 0 1.5708
+                                      children [
+                                        DEF hn05_i101_2 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/hn05_i101_2.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0 0 0.04322
+                                      rotation 1 0 0 1.5708
+                                      children [
+                                        DEF mf128zz_2 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mf128zz_2.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0 0 0.0467
+                                      children [
+                                        DEF rx64_cap_2 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/rx64_cap_2.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.02622 4.6e-05 0.0235
+                                      rotation -0.7071052811840065 -0.7071082811851994 1.0000003976552372e-06 3.141591
+                                      children [
+                                        USE mf128zz_2
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.02994 4.6e-05 0.0235
+                                      rotation -0.7071052811840065 -0.7071082811851994 1.0000003976552372e-06 3.141591
+                                      children [
+                                        USE hn05_i101_2
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.0297 4.6e-05 0.0235
+                                      rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+                                      children [
+                                        USE rx64_cap_2
+                                      ]
+                                    }
+                                  ]
+                                }
+                                physics Physics {
+                                  density -1
+                                  mass 0.292143
+                                  centerOfMass [
+                                    -0.021598 0.014456 0.023622
+                                  ]
+                                  inertiaMatrix [
+                                    0.000112946 0.000262476 0.000302507
+                                    1.25976e-05 -7.69336e-07 -2.05088e-07
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                          name "foot_right_3"
+                          boundingObject Pose {
+                            translation 0.024 -0.019081 0.045
+                            rotation -0.7071052811840065 0.7071082811851994 -1.0000003976552372e-06 3.141591
+                            children [
+                              DEF stainless_steel_2mm_leg_spacer Mesh {
+                                url [
+                                  "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_leg_spacer.stl"
+                                ]
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.157154
+                            centerOfMass [
+                              0.003502 -0.053543 0.023502
+                            ]
+                            inertiaMatrix [
+                              0.000266743 0.000115972 0.000200186
+                              -8.33375e-06 -5.26492e-09 -6.48605e-09
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                    name "foot_right_2"
+                    boundingObject Group {
+                      children [
+                        Pose {
+                          translation -0.013412 -0.0859 0.047
+                          rotation -1.0000003976552372e-06 -0.7071082811851994 0.7071052811840065 3.141591
+                          children [
+                            DEF almi_6_5mm_l_mx64 Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_6_5mm_l_mx64.stl"
+                              ]
+                            }
+                          ]
+                        }
+                        Pose {
+                          translation -0.013412 -0.0859 0.0065
+                          rotation -1.0000003976552372e-06 -0.7071082811851994 0.7071052811840065 3.141591
+                          children [
+                            USE almi_6_5mm_l_mx64
+                          ]
+                        }
+                        Pose {
+                          translation 0 -0.134 0.0235
+                          rotation -1 0 0 3.14159
+                          children [
+                            DEF mx_64t_1 Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mx_64t_1.stl"
+                              ]
+                            }
+                          ]
+                        }
+                        Pose {
+                          translation 0 -0.134 0.04694
+                          rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+                          children [
+                            DEF hn05_i101 Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/hn05_i101.stl"
+                              ]
+                            }
+                          ]
+                        }
+                        Pose {
+                          translation 0 -0.134 0.04322
+                          rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+                          children [
+                            DEF mf128zz Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mf128zz.stl"
+                              ]
+                            }
+                          ]
+                        }
+                        Pose {
+                          translation 0 -0.134 0.0467
+                          rotation 0 0 -1 1.5708
+                          children [
+                            DEF rx64_cap Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/rx64_cap.stl"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.273181
+                      centerOfMass [
+                        0.001892 -0.089022 0.02363
+                      ]
+                      inertiaMatrix [
+                        0.00054925 0.000131243 0.000472641
+                        -3.23355e-06 6.73937e-08 8.86444e-07
+                      ]
+                    }
+                  }
+                }
+              ]
+              name "foot_right_1"
+              boundingObject Group {
+                children [
+                  Pose {
+                    translation 0 0 -0.0235
+                    children [
+                      DEF mx_64t_2 Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mx_64t_2.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0 0 0.04958
+                    rotation -0.5773496025226483 -0.5773516025212714 0.5773496025226483 2.094399
+                    children [
+                      DEF almi_2mm_fr05_f101k_set Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_fr05_f101k_set.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.019 -0.043 0.01058
+                    rotation 0 0 -1 1.5708
+                    children [
+                      DEF almi_2mm_connector_mx64 Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0.019 -0.015 0.01058
+                    rotation 0 0 1 1.5708
+                    children [
+                      USE almi_2mm_connector_mx64
+                    ]
+                  }
+                  Pose {
+                    translation 0 0 0.04938
+                    rotation 0 0 -1 1.5708
+                    children [
+                      DEF fr05_f101k_set Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/fr05_f101k_set.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0 0 0.02558
+                    rotation 0 1 0 1.5708
+                    children [
+                      USE mx_64t_2
+                    ]
+                  }
+                  Pose {
+                    translation 0 0 0.0516
+                    rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+                    children [
+                      DEF mf128zz_1 Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mf128zz_1.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0 0 0.05508
+                    rotation 0 0 1 1.5708
+                    children [
+                      DEF rx64_cap_1 Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/rx64_cap_1.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0 0 0.05532
+                    rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+                    children [
+                      DEF hn05_i101_1 Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/hn05_i101_1.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.0232 0 0.02558
+                    rotation -0.7071052811840065 1.0000003976552372e-06 0.7071082811851994 3.141591
+                    children [
+                      USE rx64_cap_1
+                    ]
+                  }
+                  Pose {
+                    translation -0.02344 0 0.02558
+                    rotation -0.5773496025226482 0.5773496025226482 0.5773516025212713 2.094399
+                    children [
+                      USE hn05_i101_1
+                    ]
+                  }
+                  Pose {
+                    translation -0.01972 0 0.02558
+                    rotation -0.5773496025226482 0.5773496025226482 0.5773516025212713 2.094399
+                    children [
+                      USE mf128zz_1
+                    ]
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.292396
+                centerOfMass [
+                  -0.000122 -0.014467 0.003977
+                ]
+                inertiaMatrix [
+                  0.000302471 0.00026243 0.000113113
+                  -1.95767e-07 7.69534e-07 -1.25976e-05
+                ]
+              }
+            }
+          }
+        ]
+        name "stainless_steel_2mm_upper_leg_bracket"
+        physics Physics {
+          density -1
+          mass 0.052156
+          centerOfMass [
+            -0.004212 0 -0.00839
+          ]
+          inertiaMatrix [
+            1.13163e-05 2.97089e-05 2.98236e-05
+            -2.66522e-10 -2.03733e-07 3.66542e-11
+          ]
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 0 1
+        anchor 0.08052 -0.030096 0.021007
+      }
+      device [
+        RotationalMotor {
+          name "left_hip_yaw"
+          maxVelocity 6.8
+          minPosition -1.5708
+          maxPosition 0.785398
+          maxTorque 5.52
+        }
+        PositionSensor {
+          name "left_hip_yaw_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.08052 -0.030096 0.021007
+        children [
+          Pose {
+            translation -0.004212 0 -0.00839
+            children [
+              Shape {
+                appearance DEF stainless_steel_2mm_upper_leg_bracket_mir_parts_material PBRAppearance {
+                  baseColor 0.55972 0.560028 0.558638
+                  roughness 1
+                  metalness 0
+                }
+                geometry DEF stainless_steel_2mm_upper_leg_bracket_mir_visual Mesh {
+                  url [
+                    "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_upper_leg_bracket_mir_visual.stl"
+                  ]
+                }
+              }
+            ]
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 1 -4e-06 -4e-06
+              anchor -0.0335 0 -0.032
+            }
+            device [
+              RotationalMotor {
+                name "left_hip_roll"
+                maxVelocity 6.8
+                minPosition -0.785398
+                maxPosition 1.5708
+                maxTorque 5.52
+              }
+              PositionSensor {
+                name "left_hip_roll_sensor"
+              }
+            ]
+            endPoint Solid {
+              translation -0.0335 0 -0.032
+              rotation -0.5773496025226483 0.5773516025212714 -0.5773496025226483 2.094399
+              children [
+                Pose {
+                  translation -0.000122 0.014456 0.003982
+                  rotation 0.5773496025226482 -0.5773496025226482 0.5773516025212713 2.094399
+                  children [
+                    Shape {
+                      appearance DEF foot_left_1_parts_material PBRAppearance {
+                        baseColor 0.55972 0.560028 0.558638
+                        roughness 1
+                        metalness 0
+                      }
+                      geometry DEF foot_left_1_visual Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/foot_left_1_visual.stl"
+                        ]
+                      }
+                    }
+                  ]
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis -1 0 -4e-06
+                    anchor 0.0235 0 0.02558
+                  }
+                  device [
+                    RotationalMotor {
+                      name "left_hip_pitch"
+                      maxVelocity 6.8
+                      minPosition -1.9635
+                      maxPosition 1.1781
+                      maxTorque 5.52
+                    }
+                    PositionSensor {
+                      name "left_hip_pitch_sensor"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.0235 0 0.02558
+                    rotation 0 -1 0 1.5708
+                    children [
+                      Pose {
+                        translation 0.001892 0.089022 0.02363
+                        rotation 1 0 0 1.5708
+                        children [
+                          Shape {
+                            appearance DEF foot_left_2_parts_material PBRAppearance {
+                              baseColor 0.55972 0.560028 0.558638
+                              roughness 1
+                              metalness 0
+                            }
+                            geometry DEF foot_left_2_visual Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/foot_left_2_visual.stl"
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                      HingeJoint {
+                        jointParameters HingeJointParameters {
+                          axis 0 0 1
+                          anchor 0 0.134 0
+                        }
+                        device [
+                          RotationalMotor {
+                            name "left_knee"
+                            maxVelocity 6.8
+                            minPosition -2.35619
+                            maxPosition 2.35619
+                            maxTorque 5.52
+                          }
+                          PositionSensor {
+                            name "left_knee_sensor"
+                          }
+                        ]
+                        endPoint Solid {
+                          translation 0 0.134 0
+                          children [
+                            Pose {
+                              translation 0.003502 0.053543 0.023502
+                              rotation 1 0 0 1.5708
+                              children [
+                                Shape {
+                                  appearance DEF foot_left_3_parts_material PBRAppearance {
+                                    baseColor 0.55972 0.560028 0.558638
+                                    roughness 1
+                                    metalness 0
+                                  }
+                                  geometry DEF foot_left_3_visual Mesh {
+                                    url [
+                                      "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/foot_left_3_visual.stl"
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                            HingeJoint {
+                              jointParameters HingeJointParameters {
+                                axis 0 0 1
+                                anchor 0 0.111702 0
+                              }
+                              device [
+                                RotationalMotor {
+                                  name "left_ankle_pitch"
+                                  maxVelocity 6.8
+                                  minPosition -1.5708
+                                  maxPosition 1.5708
+                                  maxTorque 5.52
+                                }
+                                PositionSensor {
+                                  name "left_ankle_pitch_sensor"
+                                }
+                              ]
+                              endPoint Solid {
+                                translation 0 0.111702 0
+                                children [
+                                  Pose {
+                                    translation -0.021598 -0.014456 0.023622
+                                    rotation 1 0 0 1.5708
+                                    children [
+                                      Shape {
+                                        appearance DEF foot_left_4_parts_material PBRAppearance {
+                                          baseColor 0.55972 0.560028 0.558638
+                                          roughness 1
+                                          metalness 0
+                                        }
+                                        geometry DEF foot_left_4_visual Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/foot_left_4_visual.stl"
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                  HingeJoint {
+                                    jointParameters HingeJointParameters {
+                                      axis 1 0 -4e-06
+                                      anchor -0.02558 0 0.0235
+                                    }
+                                    device [
+                                      RotationalMotor {
+                                        name "left_ankle_roll"
+                                        maxVelocity 6.8
+                                        minPosition -1.0472
+                                        maxPosition 1.0472
+                                        maxTorque 5.52
+                                      }
+                                      PositionSensor {
+                                        name "left_ankle_roll_sensor"
+                                      }
+                                    ]
+                                    endPoint Solid {
+                                      translation -0.02558 0 0.0235
+                                      rotation 0 1 0 1.5708
+                                      children [
+                                        Pose {
+                                          translation -0.005775 0.030086 0.038913
+                                          rotation 0.5773496025226482 -0.5773496025226482 0.5773516025212713 2.094399
+                                          children [
+                                            Shape {
+                                              appearance DEF foot_left_5_parts_material PBRAppearance {
+                                                baseColor 0.55972 0.560028 0.558638
+                                                roughness 1
+                                                metalness 0
+                                              }
+                                              geometry DEF foot_left_5_visual Mesh {
+                                                url [
+                                                  "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/foot_left_5_visual.stl"
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                        Solid {
+                                          translation 0 0.046 0.0335
+                                          rotation 0.5773496025226482 -0.5773496025226482 0.5773516025212713 2.094399
+                                          name "left_foot"
+                                        }
+                                      ]
+                                      name "foot_left_5"
+                                      boundingObject Group {
+                                        children [
+                                          Pose {
+                                            translation -0.00775 0.032 0.02876
+                                            rotation 0 1 0 1.5708
+                                            children [
+                                              DEF almi_2mm_lower_leg_mir Mesh {
+                                                url [
+                                                  "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_lower_leg_mir.stl"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                          Pose {
+                                            translation -0.04925 0.032 0.10376
+                                            rotation -0.7071052811840065 -1.0000003976552372e-06 -0.7071082811851994 3.141591
+                                            children [
+                                              DEF pla_50__shoes_mir Mesh {
+                                                url [
+                                                  "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/pla_50__shoes_mir.stl"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                      physics Physics {
+                                        density -1
+                                        mass 0.229936
+                                        centerOfMass [
+                                          -0.005775 0.030086 0.038913
+                                        ]
+                                        inertiaMatrix [
+                                          0.000336096 0.000437543 0.000121048
+                                          2.89074e-06 4.67383e-06 5.55837e-07
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                                name "foot_left_4"
+                                boundingObject Group {
+                                  children [
+                                    Pose {
+                                      translation -0.04908 0 0.0235
+                                      rotation 0 -1 0 1.5708
+                                      children [
+                                        DEF mx_64t_mir_2 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mx_64t_mir_2.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation -0.015 -0.015 0.0425
+                                      rotation -0.5773496025226483 -0.5773516025212714 0.5773496025226483 2.094399
+                                      children [
+                                        DEF almi_2mm_connector_mx64_mir_1 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64_mir_1.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.024 -4.6e-05 0.0235
+                                      rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+                                      children [
+                                        DEF fr05_f101k_set_mir_1 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/fr05_f101k_set_mir_1.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0 0 0.0235
+                                      children [
+                                        USE mx_64t_mir_2
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.024 0 0.0235
+                                      rotation 0 0 1 1.5708
+                                      children [
+                                        DEF almi_2mm_fr05_f101k_set_mir_1 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_fr05_f101k_set_mir_1.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation -0.015 -0.043 0.0045
+                                      rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+                                      children [
+                                        USE almi_2mm_connector_mx64_mir_1
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0 0 0.04694
+                                      rotation 1 0 0 1.5708
+                                      children [
+                                        DEF hn05_i101_mir_2 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/hn05_i101_mir_2.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0 0 0.04322
+                                      rotation 1 0 0 1.5708
+                                      children [
+                                        DEF mf128zz_mir_2 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mf128zz_mir_2.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0 0 0.0467
+                                      rotation -1 0 0 3.14159
+                                      children [
+                                        DEF rx64_cap_mir_2 Mesh {
+                                          url [
+                                            "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/rx64_cap_mir_2.stl"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.02622 -4.6e-05 0.0235
+                                      rotation 0 0 -1 1.5708
+                                      children [
+                                        USE mf128zz_mir_2
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.02994 -4.6e-05 0.0235
+                                      rotation 0 0 -1 1.5708
+                                      children [
+                                        USE hn05_i101_mir_2
+                                      ]
+                                    }
+                                    Pose {
+                                      translation 0.0297 -4.6e-05 0.0235
+                                      rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+                                      children [
+                                        USE rx64_cap_mir_2
+                                      ]
+                                    }
+                                  ]
+                                }
+                                physics Physics {
+                                  density -1
+                                  mass 0.292143
+                                  centerOfMass [
+                                    -0.021598 -0.014456 0.023622
+                                  ]
+                                  inertiaMatrix [
+                                    0.000112946 0.000262475 0.000302507
+                                    -1.25975e-05 -7.69402e-07 2.05066e-07
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                          name "foot_left_3"
+                          boundingObject Pose {
+                            translation 0.024 0.019081 0.045
+                            rotation 0 0 1 1.5708
+                            children [
+                              DEF stainless_steel_2mm_leg_spacer_mir Mesh {
+                                url [
+                                  "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/stainless_steel_2mm_leg_spacer_mir.stl"
+                                ]
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.157154
+                            centerOfMass [
+                              0.003502 0.053543 0.023502
+                            ]
+                            inertiaMatrix [
+                              0.000266743 0.000115972 0.000200186
+                              8.33375e-06 -5.26492e-09 6.48605e-09
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                    name "foot_left_2"
+                    boundingObject Group {
+                      children [
+                        Pose {
+                          translation 0 0.134 0.0235
+                          children [
+                            DEF mx_64t_mir Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mx_64t_mir.stl"
+                              ]
+                            }
+                          ]
+                        }
+                        Pose {
+                          translation -0.013412 0.0859 0.0065
+                          rotation -1.0000003976552372e-06 -0.7071082811851994 0.7071052811840065 3.141591
+                          children [
+                            DEF almi_6_5mm_l_mx64_mir Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_6_5mm_l_mx64_mir.stl"
+                              ]
+                            }
+                          ]
+                        }
+                        Pose {
+                          translation -0.013412 0.0859 0.047
+                          rotation -1.0000003976552372e-06 -0.7071082811851994 0.7071052811840065 3.141591
+                          children [
+                            USE almi_6_5mm_l_mx64_mir
+                          ]
+                        }
+                        Pose {
+                          translation 0 0.134 0.04694
+                          rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+                          children [
+                            DEF hn05_i101_mir Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/hn05_i101_mir.stl"
+                              ]
+                            }
+                          ]
+                        }
+                        Pose {
+                          translation 0 0.134 0.0467
+                          rotation 0.7071052811840065 0.7071082811851994 1.0000003976552372e-06 3.141591
+                          children [
+                            DEF rx64_cap_mir Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/rx64_cap_mir.stl"
+                              ]
+                            }
+                          ]
+                        }
+                        Pose {
+                          translation 0 0.134 0.04322
+                          rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+                          children [
+                            DEF mf128zz_mir Mesh {
+                              url [
+                                "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mf128zz_mir.stl"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.273181
+                      centerOfMass [
+                        0.001892 0.089022 0.02363
+                      ]
+                      inertiaMatrix [
+                        0.00054925 0.000131243 0.000472641
+                        3.23354e-06 6.73963e-08 -8.86436e-07
+                      ]
+                    }
+                  }
+                }
+              ]
+              name "foot_left_1"
+              boundingObject Group {
+                children [
+                  Pose {
+                    translation 0 0 -0.0235
+                    rotation 1 0 0 3.14159
+                    children [
+                      DEF mx_64t_mir_1 Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mx_64t_mir_1.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0 0 0.04958
+                    rotation -0.5773496025226483 0.5773516025212714 -0.5773496025226483 2.094399
+                    children [
+                      DEF almi_2mm_fr05_f101k_set_mir Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_fr05_f101k_set_mir.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.019 0.043 0.01058
+                    rotation 0.7071052811840065 0.7071082811851994 1.0000003976552372e-06 3.141591
+                    children [
+                      DEF almi_2mm_connector_mx64_mir Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_connector_mx64_mir.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0 4.6e-05 0.04958
+                    rotation 0.7071052811840065 0.7071082811851994 1.0000003976552372e-06 3.141591
+                    children [
+                      DEF fr05_f101k_set_mir Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/fr05_f101k_set_mir.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0.019 0.015 0.01058
+                    rotation -0.7071052811840065 0.7071082811851994 -1.0000003976552372e-06 3.141591
+                    children [
+                      USE almi_2mm_connector_mx64_mir
+                    ]
+                  }
+                  Pose {
+                    translation 0 0 0.02558
+                    rotation -0.7071052811840065 1.0000003976552372e-06 0.7071082811851994 3.141591
+                    children [
+                      USE mx_64t_mir_1
+                    ]
+                  }
+                  Pose {
+                    translation 0 4.6e-05 0.0518
+                    rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+                    children [
+                      DEF mf128zz_mir_1 Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mf128zz_mir_1.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0 4.6e-05 0.05552
+                    rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+                    children [
+                      DEF hn05_i101_mir_1 Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/hn05_i101_mir_1.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation 0 4.6e-05 0.05528
+                    rotation -0.7071052811840065 0.7071082811851994 -1.0000003976552372e-06 3.141591
+                    children [
+                      DEF rx64_cap_mir_1 Mesh {
+                        url [
+                          "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/rx64_cap_mir_1.stl"
+                        ]
+                      }
+                    ]
+                  }
+                  Pose {
+                    translation -0.0232 0 0.02558
+                    rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+                    children [
+                      USE rx64_cap_mir_1
+                    ]
+                  }
+                  Pose {
+                    translation -0.02344 0 0.02558
+                    rotation 0 0 1 1.5708
+                    children [
+                      USE hn05_i101_mir_1
+                    ]
+                  }
+                  Pose {
+                    translation -0.01972 0 0.02558
+                    rotation 0 0 1 1.5708
+                    children [
+                      USE mf128zz_mir_1
+                    ]
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.292143
+                centerOfMass [
+                  -0.000122 0.014456 0.003982
+                ]
+                inertiaMatrix [
+                  0.000302507 0.000262475 0.000112946
+                  1.96526e-07 7.69256e-07 1.25975e-05
+                ]
+              }
+            }
+          }
+        ]
+        name "stainless_steel_2mm_upper_leg_bracket_mir"
+        physics Physics {
+          density -1
+          mass 0.052156
+          centerOfMass [
+            -0.004212 0 -0.00839
+          ]
+          inertiaMatrix [
+            1.13163e-05 2.97089e-05 2.98236e-05
+            2.66522e-10 -2.03733e-07 -3.66542e-11
+          ]
+        }
+      }
+    }
+  ]
+  name "Hiro"
+  boundingObject Group {
+    children [
+      Pose {
+        translation 0.08052 -0.030096 0.044506
+        rotation 0 0 1 1.5708
+        children [
+          DEF mx_64t_mir1 Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mx_64t_mir1.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.080522 -0.129096 0.044506
+        rotation 0.7071052811840065 -0.7071082811851994 -1.0000003976552372e-06 3.141591
+        children [
+          DEF mx_64t Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/mx_64t.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.150178 -0.123096 0.169212
+        rotation 0 -1 0 1.5708
+        children [
+          USE mx_28
+        ]
+      }
+      Pose {
+        translation 0.044898 -0.087414 0.15592
+        rotation -0.5773496025226483 0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          USE mx_28
+        ]
+      }
+      Pose {
+        translation 0.150178 -0.036095 0.153401
+        rotation -0.7071052811840065 1.0000003976552372e-06 0.7071082811851994 3.141591
+        children [
+          USE mx_28
+        ]
+      }
+      Pose {
+        translation 0.128323 -0.143974 0.140507
+        rotation -1 0 0 1.5708
+        children [
+          DEF upper_floor Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/upper_floor.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.128323 -0.015218 0.071507
+        rotation 1.0000003976552372e-06 0.7071082811851994 0.7071052811840065 3.141591
+        children [
+          DEF second_floor Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/second_floor.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.019322 -0.151596 0.079506
+        rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+        children [
+          DEF front_pillar Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/front_pillar.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.026322 -0.007596 0.079506
+        rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          USE front_pillar
+        ]
+      }
+      Pose {
+        translation 0.136322 -0.007596 0.079506
+        rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          USE front_pillar
+        ]
+      }
+      Pose {
+        translation 0.129322 -0.151596 0.132507
+        rotation -1 0 0 1.5708
+        children [
+          USE front_pillar
+        ]
+      }
+      Pose {
+        translation 0.079822 -0.079596 0.137507
+        rotation -1 0 0 1.5708
+        children [
+          DEF pcnel_exch Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/pcnel_exch.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.106369 -0.042909 0.158268
+        rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          DEF spacer_bracket_id_1_19_2_mir Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/spacer_bracket_id_1_19_2_mir.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.057023 -0.011596 0.144507
+        rotation -1 0 0 1.5708
+        children [
+          DEF handle_bracket_kidsize Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/handle_bracket_kidsize.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.111116 -0.038459 0.163369
+        rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          DEF almi_5mm_bracket_servo_1_2_left Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_5mm_bracket_servo_1_2_left.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.007523 -0.079596 0.197506
+        rotation 0.5773496025226482 0.5773496025226482 -0.5773516025212713 2.094399
+        children [
+          DEF handle Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/handle.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.003452 -0.146309 0.213757
+        rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          DEF holder_bumper_upper Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/holder_bumper_upper.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.125023 -0.138096 0.102506
+        rotation 1.0000003976552372e-06 0.7071082811851994 0.7071052811840065 3.141591
+        children [
+          DEF handler_holder_siber Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/handler_holder_siber.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.111372 -0.013109 0.165055
+        rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+        children [
+          DEF bracket_1_2_lower_left Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/bracket_1_2_lower_left.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.156888 -0.150809 0.160907
+        rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+        children [
+          DEF front_upper_bumper Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/front_upper_bumper.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.123288 -0.067105 0.147757
+        rotation -0.5773496025226483 -0.5773516025212714 0.5773496025226483 2.094399
+        children [
+          DEF petg_5_19_mx28_seating Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/petg_5_19_mx28_seating.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.111116 -0.120732 0.163369
+        rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+        children [
+          DEF almi_5mm_bracket_servo_1_2 Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_5mm_bracket_servo_1_2.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.106369 -0.116282 0.158268
+        rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+        children [
+          DEF spacer_bracket_id_1_19_2 Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/spacer_bracket_id_1_19_2.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.125023 -0.011096 0.102506
+        rotation 1.0000003976552372e-06 0.7071082811851994 0.7071052811840065 3.141591
+        children [
+          USE handler_holder_siber
+        ]
+      }
+      Pose {
+        translation 0.156888 -0.008609 0.160907
+        rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          DEF front_upper_bumper_mir Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/front_upper_bumper_mir.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.057023 -0.147596 0.144507
+        rotation -1 0 0 1.5708
+        children [
+          USE handle_bracket_kidsize
+        ]
+      }
+      Pose {
+        translation 0.111372 -0.146082 0.165055
+        rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          DEF bracket_1_2_lower Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/bracket_1_2_lower.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.15952 -0.011096 0.049471
+        rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          DEF bumper_front_lower_mir Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/bumper_front_lower_mir.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.106179 -0.127432 0.061506
+        rotation 0.7071052811840065 -1.0000003976552372e-06 0.7071082811851994 3.141591
+        children [
+          DEF spacer_106_64_mir2 Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/spacer_106_64_mir2.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.13102 -0.038798 0.091179
+        rotation -0.5773496025226483 0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          DEF holder_lower_bracket_mir Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/holder_lower_bracket_mir.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.081569 -0.083255 0.027506
+        rotation -0.5773496025226482 0.5773496025226482 0.5773516025212713 2.094399
+        children [
+          DEF almi_2mm_floor_2nd__1 Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/almi_2mm_floor_2nd__1.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.106177 -0.031759 0.061506
+        rotation 0 -1 0 1.5708
+        children [
+          DEF spacer_106_64_mir2_mir Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/spacer_106_64_mir2_mir.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.03682 -0.014896 0.048507
+        rotation 1.0000003976552372e-06 0.7071082811851994 0.7071052811840065 3.141591
+        children [
+          DEF back_bumper Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/back_bumper.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.023821 -0.048796 0.027506
+        rotation 0 0 -1 1.5708
+        children [
+          DEF xt_bracket Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/xt_bracket.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.135821 -0.079596 0.022506
+        rotation 1.0000003976552372e-06 0.7071082811851994 0.7071052811840065 3.141591
+        children [
+          DEF battery_holder Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/battery_holder.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.03682 -0.144296 0.048507
+        rotation -1.0000003976552372e-06 -0.7071082811851994 0.7071052811840065 3.141591
+        children [
+          USE back_bumper
+        ]
+      }
+      Pose {
+        translation 0.03482 -0.034396 0.049507
+        rotation 0.5773496025226483 -0.5773516025212714 -0.5773496025226483 2.094399
+        children [
+          DEF bracket_back_bumper Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/bracket_back_bumper.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.131022 -0.120393 0.091179
+        rotation -0.5773496025226483 -0.5773516025212714 0.5773496025226483 2.094399
+        children [
+          DEF holder_lower_bracket Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/holder_lower_bracket.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.027821 -0.110396 0.027506
+        rotation 0 0 1 1.5708
+        children [
+          USE xt_bracket
+        ]
+      }
+      Pose {
+        translation 0.159522 -0.148096 0.049471
+        rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+        children [
+          DEF bumper_front_lower Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/bumper_front_lower.stl"
+            ]
+          }
+        ]
+      }
+      Pose {
+        translation 0.03482 -0.124796 0.049507
+        rotation 0.5773496025226483 0.5773516025212714 0.5773496025226483 2.094399
+        children [
+          DEF bracket_back_bumper_mir Mesh {
+            url [
+              "/home/musyaree/ros2_ws/src/gijitaiken_webots/protos/hiro_textures/bracket_back_bumper_mir.stl"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 2.16719
+    centerOfMass [
+      0.085701 -0.079601 0.097693
+    ]
+    inertiaMatrix [
+      0.00982507 0.00929033 0.00934245
+      9.38024e-07 -0.000706149 8.09787e-07
+    ]
+  }
+  controller "<extern>"
+  synchronization FALSE
+}
+RobocupSoccerBall {
+  translation 1.03 0 0.07
+  name "ball"
+}
